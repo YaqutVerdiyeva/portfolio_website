@@ -1,0 +1,83 @@
+.home-page {
+  .container {
+    height: 100vh;
+    position: relative;
+    .header-nav {
+      position: absolute;
+      top: 0;
+      left: -100px;
+      z-index: 12;
+      background-color: transparent;
+      width: 200px;
+      .menu-button {
+        background-color: transparent;
+        margin: 20% 40% 10%;
+        .menu-button-line:nth-child(1) {
+          width: 40px;
+          animation: slidefirst 1s forwards;
+        }
+        .menu-button-line:nth-child(2) {
+          animation: slidesecond 1s forwards;
+          width: 70px;
+        }
+        .menu-button-line:nth-child(3) {
+          width: 100px;
+        }
+        &:hover {
+          cursor: pointer;
+          .menu-button-line:nth-child(1) {
+            width: 40px;
+            animation: slide1 1s forwards;
+          }
+          .menu-button-line:nth-child(2) {
+            width: 70px;
+            animation: slide2 1s forwards;
+          }
+        }
+        .menu-button-line {
+          height: 2px;
+          margin-bottom: 25px;
+          background: $secondary_color;
+          transition: 0.3s;
+          transition-timing-function: linear;
+        }
+      }
+    }
+    @keyframes slide1 {
+      0% {
+        width: 40px;
+      }
+      100% {
+        width: 100px;
+      }
+    }
+
+    @keyframes slide2 {
+      0% {
+        width: 70px;
+      }
+      100% {
+        width: 100px;
+      }
+    }
+
+    @keyframes slidefirst {
+      0% {
+        width: 100px;
+      }
+
+      100% {
+        width: 40px;
+      }
+    }
+    @keyframes slidesecond {
+      0% {
+        width: 100px;
+      }
+
+      100% {
+        width: 70px;
+      }
+    }
+  }
+}
