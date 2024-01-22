@@ -2,44 +2,59 @@
   .container {
     height: 100vh;
     position: relative;
+    padding: 0;
     .header-nav {
       position: absolute;
       top: 0;
-      left: -70px;
       z-index: 12;
       background-color: transparent;
-      width: 200px;
-      .menu-button {
+      width: 100%;
+      ul {
+        margin: 0;
+        padding: 0;
         background-color: transparent;
-        margin: 20% 40% 10%;
-        .menu-button-line:nth-child(1) {
-          width: 40px;
-          animation: slidefirst 1s forwards;
-        }
-        .menu-button-line:nth-child(2) {
-          animation: slidesecond 1s forwards;
-          width: 70px;
-        }
-        .menu-button-line:nth-child(3) {
-          width: 100px;
-        }
-        &:hover {
-          cursor: pointer;
-          .menu-button-line:nth-child(1) {
-            width: 40px;
-            animation: slide1 1s forwards;
+        display: flex;
+        justify-content: space-between;
+        li {
+          background-color: transparent;
+          .menu-button {
+            background-color: transparent;
+            width: 100%;
+            margin: 20% 40% 10%;
+            .menu-button-line:nth-child(1) {
+              width: 40px;
+              animation: slidefirst 1s forwards;
+            }
+            .menu-button-line:nth-child(2) {
+              animation: slidesecond 1s forwards;
+              width: 70px;
+            }
+            .menu-button-line:nth-child(3) {
+              width: 100px;
+            }
+            &:hover {
+              cursor: pointer;
+              .menu-button-line:nth-child(1) {
+                width: 40px;
+                animation: slide1 1s forwards;
+              }
+              .menu-button-line:nth-child(2) {
+                width: 70px;
+                animation: slide2 1s forwards;
+              }
+            }
+            .menu-button-line {
+              height: 2px;
+              margin-bottom: 25px;
+              background: $secondary_color;
+              transition: 0.3s;
+              transition-timing-function: linear;
+            }
           }
-          .menu-button-line:nth-child(2) {
-            width: 70px;
-            animation: slide2 1s forwards;
+          img {
+            background-color: transparent;
+            width: 120px;
           }
-        }
-        .menu-button-line {
-          height: 2px;
-          margin-bottom: 25px;
-          background: $secondary_color;
-          transition: 0.3s;
-          transition-timing-function: linear;
         }
       }
     }
