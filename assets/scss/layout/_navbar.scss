@@ -52,11 +52,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 20px;
 
         ul {
           text-align: center;
-          line-height: 60px;
+          line-height: 65px;
           background-color: transparent;
           z-index: 20;
           li {
@@ -64,8 +63,8 @@
             a {
               background-color: transparent;
               color: $secondary_color;
-              font-size: 35px;
-              font-weight: 400;
+              font-size: 70px;
+              font-weight: 100;
             }
           }
         }
