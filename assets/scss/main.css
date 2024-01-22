@@ -335,7 +335,7 @@
   flex-direction: column;
 }
 .about-page .page .container .about-me-section .text-photo .left h2 {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 400;
   color: #f5f5f5;
 }
@@ -344,7 +344,7 @@
 }
 .about-page .page .container .about-me-section .text-photo .left p {
   margin: 35px 0;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 3px;
   font-weight: 400;
   color: #c7c7c7;
