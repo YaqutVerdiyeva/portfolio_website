@@ -16,63 +16,73 @@
   max-width: 1200px;
 }
 
-.home-page .container {
+::-webkit-scrollbar {
+  background-color: #171717;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c70039;
+  border-radius: 25px;
+}
+
+.page .container {
   height: 100vh;
   position: relative;
   padding: 0;
 }
-.home-page .container .header-nav {
+.page .container .header-nav {
   position: absolute;
   top: 0;
   z-index: 12;
   background-color: transparent;
   width: 100%;
 }
-.home-page .container .header-nav ul {
+.page .container .header-nav ul {
   margin: 0;
   padding: 0;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
 }
-.home-page .container .header-nav ul li {
+.page .container .header-nav ul li {
   background-color: transparent;
 }
-.home-page .container .header-nav ul li .menu-button {
+.page .container .header-nav ul li .menu-button {
   background-color: transparent;
   width: 100%;
   margin: 20% 40% 10%;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slidefirst 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
   animation: slidesecond 1s forwards;
   width: 70px;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
   width: 100px;
 }
-.home-page .container .header-nav ul li .menu-button:hover {
+.page .container .header-nav ul li .menu-button:hover {
   cursor: pointer;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slide1 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
   width: 70px;
   animation: slide2 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line {
+.page .container .header-nav ul li .menu-button .menu-button-line {
   height: 2px;
   margin-bottom: 25px;
   background: #767676;
   transition: 0.3s;
   transition-timing-function: linear;
 }
-.home-page .container .header-nav ul li img {
+.page .container .header-nav ul li img {
   background-color: transparent;
   width: 120px;
 }
@@ -109,10 +119,10 @@
   }
 }
 
-.home-page {
+.page {
   position: relative;
 }
-.home-page .navbar {
+.page .navbar {
   margin: 0;
   padding: 0;
   z-index: 25;
@@ -125,13 +135,13 @@
   left: 0;
   animation: nav 1s forwards;
 }
-.home-page .navbar .items {
+.page .navbar .items {
   position: relative;
   left: 0;
   top: 0;
   width: 100%;
 }
-.home-page .navbar .items .close-menu-btn {
+.page .navbar .items .close-menu-btn {
   text-align: end;
   color: #c70039;
   font-size: 50px;
@@ -139,15 +149,15 @@
   border: none;
   transition: all 0.4s ease 0s;
 }
-.home-page .navbar .items .close-menu-btn:hover {
+.page .navbar .items .close-menu-btn:hover {
   text-shadow: 0px 0px 20px #f5f5f5;
   transition: all 0.4s ease 0s;
 }
-.home-page .navbar .items .close-menu-btn i {
+.page .navbar .items .close-menu-btn i {
   margin: 25px;
   background-color: transparent;
 }
-.home-page .navbar .items .link-text {
+.page .navbar .items .link-text {
   background-color: transparent;
   font-size: 130px;
   display: none;
@@ -161,22 +171,22 @@
   text-align: center;
   text-shadow: 0px 0px 20px #c70039;
 }
-.home-page .navbar .items nav {
+.page .navbar .items nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.home-page .navbar .items nav ul {
+.page .navbar .items nav ul {
   text-align: center;
   line-height: 65px;
   background-color: transparent;
   z-index: 20;
 }
-.home-page .navbar .items nav ul li {
+.page .navbar .items nav ul li {
   background-color: transparent;
 }
-.home-page .navbar .items nav ul li a {
+.page .navbar .items nav ul li a {
   background-color: transparent;
   color: #767676;
   font-size: 70px;
@@ -204,63 +214,500 @@
     font-size: 75px;
   }
 }
-.home-page .container {
+.page .container {
   height: 100vh;
   position: relative;
   padding: 0;
 }
-.home-page .container .header-nav {
+.page .container .header-nav {
   position: absolute;
   top: 0;
   z-index: 12;
   background-color: transparent;
   width: 100%;
 }
-.home-page .container .header-nav ul {
+.page .container .header-nav ul {
   margin: 0;
   padding: 0;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
 }
-.home-page .container .header-nav ul li {
+.page .container .header-nav ul li {
   background-color: transparent;
 }
-.home-page .container .header-nav ul li .menu-button {
+.page .container .header-nav ul li .menu-button {
   background-color: transparent;
   width: 100%;
   margin: 20% 40% 10%;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slidefirst 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
   animation: slidesecond 1s forwards;
   width: 70px;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
   width: 100px;
 }
-.home-page .container .header-nav ul li .menu-button:hover {
+.page .container .header-nav ul li .menu-button:hover {
   cursor: pointer;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slide1 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
   width: 70px;
   animation: slide2 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line {
+.page .container .header-nav ul li .menu-button .menu-button-line {
   height: 2px;
   margin-bottom: 25px;
   background: #767676;
   transition: 0.3s;
   transition-timing-function: linear;
 }
-.home-page .container .header-nav ul li img {
+.page .container .header-nav ul li img {
+  background-color: transparent;
+  width: 120px;
+}
+@keyframes slide1 {
+  0% {
+    width: 40px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+@keyframes slide2 {
+  0% {
+    width: 70px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+@keyframes slidefirst {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 40px;
+  }
+}
+@keyframes slidesecond {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 70px;
+  }
+}
+
+.about-page .page .container .about-me-section .heading {
+  text-align: center;
+  padding-top: 100px;
+  color: #f5f5f5;
+}
+.about-page .page .container .about-me-section .heading h1 {
+  font-size: 55px;
+  font-weight: 400;
+}
+.about-page .page .container .about-me-section .heading p {
+  font-weight: 100;
+  font-size: 22px;
+}
+.about-page .page .container .about-me-section .heading span {
+  color: #c70039;
+}
+.about-page .page .container .about-me-section .text-photo {
+  padding-top: 20px;
+  display: flex;
+}
+.about-page .page .container .about-me-section .text-photo .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-page .page .container .about-me-section .text-photo .left h2 {
+  font-size: 45px;
+  font-weight: 400;
+  color: #f5f5f5;
+}
+.about-page .page .container .about-me-section .text-photo .left h2 span {
+  color: #c70039;
+}
+.about-page .page .container .about-me-section .text-photo .left p {
+  margin: 35px 0;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: #c7c7c7;
+}
+.about-page .page .container .about-me-section .text-photo .left #wrap {
+  margin: 20px auto;
+  text-align: center;
+}
+.about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2 {
+  position: relative;
+  display: inline-block;
+  height: 54px;
+  width: 200px;
+  line-height: 50px;
+  padding: 0;
+  border-radius: 50px;
+  background: #f5f5f5;
+  border: 2px solid #c70039;
+  margin: 10px;
+  transition: 0.5s;
+}
+.about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2:hover {
+  background-color: #c70039;
+}
+.about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2:hover .circle2 {
+  left: 100%;
+  margin-left: -45px;
+  background-color: #f5f5f5;
+  color: #c70039;
+}
+.about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2:hover .circle2 .fa-solid {
+  color: #c70039;
+}
+.about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2:hover .title2 {
+  left: 40px;
+  opacity: 0;
+}
+.about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2:hover .title-hover2 {
+  opacity: 1;
+  left: 40px;
+}
+.about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2 .circle2 {
+  display: block;
+  background-color: #c70039;
+  color: #f5f5f5;
+  position: absolute;
+  float: left;
+  margin: 5px;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2 .circle2 .fa-solid {
+  color: #f5f5f5;
+}
+.about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2 .title2 {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  color: #c70039;
+  left: 80px;
+  transition: 0.5s;
+}
+.about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2 .title-hover2 {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: #c70039;
+  left: 80px;
+  opacity: 0;
+  transition: 0.5s;
+  color: #f5f5f5;
+  background-color: transparent;
+}
+.about-page .page .container .about-me-section .text-photo .right {
+  width: 50%;
+}
+.about-page .page .container .about-me-section .text-photo .right img {
+  border-radius: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+* {
+  background-color: #171717;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+::-webkit-scrollbar {
+  background-color: #171717;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c70039;
+  border-radius: 25px;
+}
+
+.page .container {
+  height: 100vh;
+  position: relative;
+  padding: 0;
+}
+.page .container .header-nav {
+  position: absolute;
+  top: 0;
+  z-index: 12;
+  background-color: transparent;
+  width: 100%;
+}
+.page .container .header-nav ul {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+.page .container .header-nav ul li {
+  background-color: transparent;
+}
+.page .container .header-nav ul li .menu-button {
+  background-color: transparent;
+  width: 100%;
+  margin: 20% 40% 10%;
+}
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
+  width: 40px;
+  animation: slidefirst 1s forwards;
+}
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
+  animation: slidesecond 1s forwards;
+  width: 70px;
+}
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
+  width: 100px;
+}
+.page .container .header-nav ul li .menu-button:hover {
+  cursor: pointer;
+}
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
+  width: 40px;
+  animation: slide1 1s forwards;
+}
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
+  width: 70px;
+  animation: slide2 1s forwards;
+}
+.page .container .header-nav ul li .menu-button .menu-button-line {
+  height: 2px;
+  margin-bottom: 25px;
+  background: #767676;
+  transition: 0.3s;
+  transition-timing-function: linear;
+}
+.page .container .header-nav ul li img {
+  background-color: transparent;
+  width: 120px;
+}
+@keyframes slide1 {
+  0% {
+    width: 40px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+@keyframes slide2 {
+  0% {
+    width: 70px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+@keyframes slidefirst {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 40px;
+  }
+}
+@keyframes slidesecond {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 70px;
+  }
+}
+
+.page {
+  position: relative;
+}
+.page .navbar {
+  margin: 0;
+  padding: 0;
+  z-index: 25;
+  height: 100vh;
+  background-color: #171717;
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  animation: nav 1s forwards;
+}
+.page .navbar .items {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.page .navbar .items .close-menu-btn {
+  text-align: end;
+  color: #c70039;
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+.page .navbar .items .close-menu-btn:hover {
+  text-shadow: 0px 0px 20px #f5f5f5;
+  transition: all 0.4s ease 0s;
+}
+.page .navbar .items .close-menu-btn i {
+  margin: 25px;
+  background-color: transparent;
+}
+.page .navbar .items .link-text {
+  background-color: transparent;
+  font-size: 130px;
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  color: #171717;
+  z-index: 15;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 0px 0px 20px #c70039;
+}
+.page .navbar .items nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.page .navbar .items nav ul {
+  text-align: center;
+  line-height: 65px;
+  background-color: transparent;
+  z-index: 20;
+}
+.page .navbar .items nav ul li {
+  background-color: transparent;
+}
+.page .navbar .items nav ul li a {
+  background-color: transparent;
+  color: #767676;
+  font-size: 70px;
+  font-weight: 100;
+}
+
+@keyframes nav {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes closenav {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .home-page .navbar .items .link-text {
+    font-size: 75px;
+  }
+}
+.page .container {
+  height: 100vh;
+  position: relative;
+  padding: 0;
+}
+.page .container .header-nav {
+  position: absolute;
+  top: 0;
+  z-index: 12;
+  background-color: transparent;
+  width: 100%;
+}
+.page .container .header-nav ul {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+.page .container .header-nav ul li {
+  background-color: transparent;
+}
+.page .container .header-nav ul li .menu-button {
+  background-color: transparent;
+  width: 100%;
+  margin: 20% 40% 10%;
+}
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
+  width: 40px;
+  animation: slidefirst 1s forwards;
+}
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
+  animation: slidesecond 1s forwards;
+  width: 70px;
+}
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
+  width: 100px;
+}
+.page .container .header-nav ul li .menu-button:hover {
+  cursor: pointer;
+}
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
+  width: 40px;
+  animation: slide1 1s forwards;
+}
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
+  width: 70px;
+  animation: slide2 1s forwards;
+}
+.page .container .header-nav ul li .menu-button .menu-button-line {
+  height: 2px;
+  margin-bottom: 25px;
+  background: #767676;
+  transition: 0.3s;
+  transition-timing-function: linear;
+}
+.page .container .header-nav ul li img {
   background-color: transparent;
   width: 120px;
 }
@@ -315,63 +762,73 @@
   max-width: 1200px;
 }
 
-.home-page .container {
+::-webkit-scrollbar {
+  background-color: #171717;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c70039;
+  border-radius: 25px;
+}
+
+.page .container {
   height: 100vh;
   position: relative;
   padding: 0;
 }
-.home-page .container .header-nav {
+.page .container .header-nav {
   position: absolute;
   top: 0;
   z-index: 12;
   background-color: transparent;
   width: 100%;
 }
-.home-page .container .header-nav ul {
+.page .container .header-nav ul {
   margin: 0;
   padding: 0;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
 }
-.home-page .container .header-nav ul li {
+.page .container .header-nav ul li {
   background-color: transparent;
 }
-.home-page .container .header-nav ul li .menu-button {
+.page .container .header-nav ul li .menu-button {
   background-color: transparent;
   width: 100%;
   margin: 20% 40% 10%;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slidefirst 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
   animation: slidesecond 1s forwards;
   width: 70px;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
   width: 100px;
 }
-.home-page .container .header-nav ul li .menu-button:hover {
+.page .container .header-nav ul li .menu-button:hover {
   cursor: pointer;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slide1 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
   width: 70px;
   animation: slide2 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line {
+.page .container .header-nav ul li .menu-button .menu-button-line {
   height: 2px;
   margin-bottom: 25px;
   background: #767676;
   transition: 0.3s;
   transition-timing-function: linear;
 }
-.home-page .container .header-nav ul li img {
+.page .container .header-nav ul li img {
   background-color: transparent;
   width: 120px;
 }
@@ -408,10 +865,10 @@
   }
 }
 
-.home-page {
+.page {
   position: relative;
 }
-.home-page .navbar {
+.page .navbar {
   margin: 0;
   padding: 0;
   z-index: 25;
@@ -424,13 +881,13 @@
   left: 0;
   animation: nav 1s forwards;
 }
-.home-page .navbar .items {
+.page .navbar .items {
   position: relative;
   left: 0;
   top: 0;
   width: 100%;
 }
-.home-page .navbar .items .close-menu-btn {
+.page .navbar .items .close-menu-btn {
   text-align: end;
   color: #c70039;
   font-size: 50px;
@@ -438,15 +895,15 @@
   border: none;
   transition: all 0.4s ease 0s;
 }
-.home-page .navbar .items .close-menu-btn:hover {
+.page .navbar .items .close-menu-btn:hover {
   text-shadow: 0px 0px 20px #f5f5f5;
   transition: all 0.4s ease 0s;
 }
-.home-page .navbar .items .close-menu-btn i {
+.page .navbar .items .close-menu-btn i {
   margin: 25px;
   background-color: transparent;
 }
-.home-page .navbar .items .link-text {
+.page .navbar .items .link-text {
   background-color: transparent;
   font-size: 130px;
   display: none;
@@ -460,22 +917,22 @@
   text-align: center;
   text-shadow: 0px 0px 20px #c70039;
 }
-.home-page .navbar .items nav {
+.page .navbar .items nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.home-page .navbar .items nav ul {
+.page .navbar .items nav ul {
   text-align: center;
   line-height: 65px;
   background-color: transparent;
   z-index: 20;
 }
-.home-page .navbar .items nav ul li {
+.page .navbar .items nav ul li {
   background-color: transparent;
 }
-.home-page .navbar .items nav ul li a {
+.page .navbar .items nav ul li a {
   background-color: transparent;
   color: #767676;
   font-size: 70px;
@@ -503,63 +960,63 @@
     font-size: 75px;
   }
 }
-.home-page .container {
+.page .container {
   height: 100vh;
   position: relative;
   padding: 0;
 }
-.home-page .container .header-nav {
+.page .container .header-nav {
   position: absolute;
   top: 0;
   z-index: 12;
   background-color: transparent;
   width: 100%;
 }
-.home-page .container .header-nav ul {
+.page .container .header-nav ul {
   margin: 0;
   padding: 0;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
 }
-.home-page .container .header-nav ul li {
+.page .container .header-nav ul li {
   background-color: transparent;
 }
-.home-page .container .header-nav ul li .menu-button {
+.page .container .header-nav ul li .menu-button {
   background-color: transparent;
   width: 100%;
   margin: 20% 40% 10%;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slidefirst 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
   animation: slidesecond 1s forwards;
   width: 70px;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
   width: 100px;
 }
-.home-page .container .header-nav ul li .menu-button:hover {
+.page .container .header-nav ul li .menu-button:hover {
   cursor: pointer;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slide1 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
   width: 70px;
   animation: slide2 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line {
+.page .container .header-nav ul li .menu-button .menu-button-line {
   height: 2px;
   margin-bottom: 25px;
   background: #767676;
   transition: 0.3s;
   transition-timing-function: linear;
 }
-.home-page .container .header-nav ul li img {
+.page .container .header-nav ul li img {
   background-color: transparent;
   width: 120px;
 }
@@ -614,103 +1071,20 @@
   max-width: 1200px;
 }
 
-.home-page .container {
-  height: 100vh;
-  position: relative;
-  padding: 0;
-}
-.home-page .container .header-nav {
-  position: absolute;
-  top: 0;
-  z-index: 12;
-  background-color: transparent;
-  width: 100%;
-}
-.home-page .container .header-nav ul {
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  display: flex;
-  justify-content: space-between;
-}
-.home-page .container .header-nav ul li {
-  background-color: transparent;
-}
-.home-page .container .header-nav ul li .menu-button {
-  background-color: transparent;
-  width: 100%;
-  margin: 20% 40% 10%;
-}
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
-  width: 40px;
-  animation: slidefirst 1s forwards;
-}
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
-  animation: slidesecond 1s forwards;
-  width: 70px;
-}
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
-  width: 100px;
-}
-.home-page .container .header-nav ul li .menu-button:hover {
-  cursor: pointer;
-}
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
-  width: 40px;
-  animation: slide1 1s forwards;
-}
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
-  width: 70px;
-  animation: slide2 1s forwards;
-}
-.home-page .container .header-nav ul li .menu-button .menu-button-line {
-  height: 2px;
-  margin-bottom: 25px;
-  background: #767676;
-  transition: 0.3s;
-  transition-timing-function: linear;
-}
-.home-page .container .header-nav ul li img {
-  background-color: transparent;
-  width: 120px;
-}
-@keyframes slide1 {
-  0% {
-    width: 40px;
-  }
-  100% {
-    width: 100px;
-  }
-}
-@keyframes slide2 {
-  0% {
-    width: 70px;
-  }
-  100% {
-    width: 100px;
-  }
-}
-@keyframes slidefirst {
-  0% {
-    width: 100px;
-  }
-  100% {
-    width: 40px;
-  }
-}
-@keyframes slidesecond {
-  0% {
-    width: 100px;
-  }
-  100% {
-    width: 70px;
-  }
+::-webkit-scrollbar {
+  background-color: #171717;
+  width: 8px;
 }
 
-.home-page {
+::-webkit-scrollbar-thumb {
+  background-color: #c70039;
+  border-radius: 25px;
+}
+
+.page {
   position: relative;
 }
-.home-page .navbar {
+.page .navbar {
   margin: 0;
   padding: 0;
   z-index: 25;
@@ -723,13 +1097,13 @@
   left: 0;
   animation: nav 1s forwards;
 }
-.home-page .navbar .items {
+.page .navbar .items {
   position: relative;
   left: 0;
   top: 0;
   width: 100%;
 }
-.home-page .navbar .items .close-menu-btn {
+.page .navbar .items .close-menu-btn {
   text-align: end;
   color: #c70039;
   font-size: 50px;
@@ -737,15 +1111,15 @@
   border: none;
   transition: all 0.4s ease 0s;
 }
-.home-page .navbar .items .close-menu-btn:hover {
+.page .navbar .items .close-menu-btn:hover {
   text-shadow: 0px 0px 20px #f5f5f5;
   transition: all 0.4s ease 0s;
 }
-.home-page .navbar .items .close-menu-btn i {
+.page .navbar .items .close-menu-btn i {
   margin: 25px;
   background-color: transparent;
 }
-.home-page .navbar .items .link-text {
+.page .navbar .items .link-text {
   background-color: transparent;
   font-size: 130px;
   display: none;
@@ -759,22 +1133,22 @@
   text-align: center;
   text-shadow: 0px 0px 20px #c70039;
 }
-.home-page .navbar .items nav {
+.page .navbar .items nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.home-page .navbar .items nav ul {
+.page .navbar .items nav ul {
   text-align: center;
   line-height: 65px;
   background-color: transparent;
   z-index: 20;
 }
-.home-page .navbar .items nav ul li {
+.page .navbar .items nav ul li {
   background-color: transparent;
 }
-.home-page .navbar .items nav ul li a {
+.page .navbar .items nav ul li a {
   background-color: transparent;
   color: #767676;
   font-size: 70px;
@@ -802,63 +1176,63 @@
     font-size: 75px;
   }
 }
-.home-page .container {
+.page .container {
   height: 100vh;
   position: relative;
   padding: 0;
 }
-.home-page .container .header-nav {
+.page .container .header-nav {
   position: absolute;
   top: 0;
   z-index: 12;
   background-color: transparent;
   width: 100%;
 }
-.home-page .container .header-nav ul {
+.page .container .header-nav ul {
   margin: 0;
   padding: 0;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
 }
-.home-page .container .header-nav ul li {
+.page .container .header-nav ul li {
   background-color: transparent;
 }
-.home-page .container .header-nav ul li .menu-button {
+.page .container .header-nav ul li .menu-button {
   background-color: transparent;
   width: 100%;
   margin: 20% 40% 10%;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slidefirst 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
   animation: slidesecond 1s forwards;
   width: 70px;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
   width: 100px;
 }
-.home-page .container .header-nav ul li .menu-button:hover {
+.page .container .header-nav ul li .menu-button:hover {
   cursor: pointer;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slide1 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
   width: 70px;
   animation: slide2 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line {
+.page .container .header-nav ul li .menu-button .menu-button-line {
   height: 2px;
   margin-bottom: 25px;
   background: #767676;
   transition: 0.3s;
   transition-timing-function: linear;
 }
-.home-page .container .header-nav ul li img {
+.page .container .header-nav ul li img {
   background-color: transparent;
   width: 120px;
 }
@@ -895,216 +1269,10 @@
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none !important;
-}
-
-* {
-  background-color: #171717;
-  font-family: "Roboto", sans-serif;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.home-page {
-  position: relative;
-}
-.home-page .navbar {
-  margin: 0;
-  padding: 0;
-  z-index: 25;
-  height: 100vh;
-  background-color: #171717;
-  display: none;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  animation: nav 1s forwards;
-}
-.home-page .navbar .items {
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-.home-page .navbar .items .close-menu-btn {
-  text-align: end;
-  color: #c70039;
-  font-size: 50px;
-  background-color: transparent;
-  border: none;
-  transition: all 0.4s ease 0s;
-}
-.home-page .navbar .items .close-menu-btn:hover {
-  text-shadow: 0px 0px 20px #f5f5f5;
-  transition: all 0.4s ease 0s;
-}
-.home-page .navbar .items .close-menu-btn i {
-  margin: 25px;
-  background-color: transparent;
-}
-.home-page .navbar .items .link-text {
-  background-color: transparent;
-  font-size: 130px;
-  display: none;
-  position: absolute;
-  top: 40%;
-  left: 0;
-  width: 100%;
-  color: #171717;
-  z-index: 15;
-  font-weight: 900;
-  text-align: center;
-  text-shadow: 0px 0px 20px #c70039;
-}
-.home-page .navbar .items nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.home-page .navbar .items nav ul {
-  text-align: center;
-  line-height: 65px;
-  background-color: transparent;
-  z-index: 20;
-}
-.home-page .navbar .items nav ul li {
-  background-color: transparent;
-}
-.home-page .navbar .items nav ul li a {
-  background-color: transparent;
-  color: #767676;
-  font-size: 70px;
-  font-weight: 100;
-}
-
-@keyframes nav {
-  0% {
-    top: -100vh;
-  }
-  100% {
-    top: 0;
-  }
-}
-@keyframes closenav {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: -100vh;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .home-page .navbar .items .link-text {
-    font-size: 75px;
-  }
-}
-.home-page .container {
-  height: 100vh;
-  position: relative;
-  padding: 0;
-}
-.home-page .container .header-nav {
-  position: absolute;
-  top: 0;
-  z-index: 12;
-  background-color: transparent;
-  width: 100%;
-}
-.home-page .container .header-nav ul {
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  display: flex;
-  justify-content: space-between;
-}
-.home-page .container .header-nav ul li {
-  background-color: transparent;
-}
-.home-page .container .header-nav ul li .menu-button {
-  background-color: transparent;
-  width: 100%;
-  margin: 20% 40% 10%;
-}
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
-  width: 40px;
-  animation: slidefirst 1s forwards;
-}
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
-  animation: slidesecond 1s forwards;
-  width: 70px;
-}
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
-  width: 100px;
-}
-.home-page .container .header-nav ul li .menu-button:hover {
-  cursor: pointer;
-}
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
-  width: 40px;
-  animation: slide1 1s forwards;
-}
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
-  width: 70px;
-  animation: slide2 1s forwards;
-}
-.home-page .container .header-nav ul li .menu-button .menu-button-line {
-  height: 2px;
-  margin-bottom: 25px;
-  background: #767676;
-  transition: 0.3s;
-  transition-timing-function: linear;
-}
-.home-page .container .header-nav ul li img {
-  background-color: transparent;
-  width: 120px;
-}
-@keyframes slide1 {
-  0% {
-    width: 40px;
-  }
-  100% {
-    width: 100px;
-  }
-}
-@keyframes slide2 {
-  0% {
-    width: 70px;
-  }
-  100% {
-    width: 100px;
-  }
-}
-@keyframes slidefirst {
-  0% {
-    width: 100px;
-  }
-  100% {
-    width: 40px;
-  }
-}
-@keyframes slidesecond {
-  0% {
-    width: 100px;
-  }
-  100% {
-    width: 70px;
-  }
-}
-
-.home-page .container {
+.home-page .page .container {
   height: 100vh;
 }
-.home-page .container .main-section {
+.home-page .page .container .main-section {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1112,7 +1280,7 @@
   position: relative;
   top: 35%;
 }
-.home-page .container .main-section .text {
+.home-page .page .container .main-section .text {
   text-align: center;
   z-index: 10;
   background-color: transparent;
@@ -1120,12 +1288,12 @@
   font-weight: 900;
   color: #f5f5f5;
 }
-.home-page .container .main-section .text .text-name {
+.home-page .page .container .main-section .text .text-name {
   color: #c70039;
   z-index: 10;
   background-color: transparent;
 }
-.home-page .container .main-section #text {
+.home-page .page .container .main-section #text {
   z-index: 10;
   background-color: transparent;
   display: flex;
@@ -1135,41 +1303,41 @@
   text-align: center;
   color: #f5f5f5;
 }
-.home-page .container .main-section #text #app {
+.home-page .page .container .main-section #text #app {
   animation: textclip 2s linear infinite;
   background-color: transparent;
   color: #c70039;
 }
-.home-page .container .main-section #text #app .Typewriter__wrapper {
+.home-page .page .container .main-section #text #app .Typewriter__wrapper {
   background-color: transparent;
 }
-.home-page .container .main-section .icons {
+.home-page .page .container .main-section .icons {
   z-index: 10;
   background-color: transparent;
 }
-.home-page .container .main-section .icons a {
+.home-page .page .container .main-section .icons a {
   background-color: transparent;
   border: none;
   transition: all 0.4s ease 0s;
 }
-.home-page .container .main-section .icons a:hover {
+.home-page .page .container .main-section .icons a:hover {
   text-shadow: 0px 0px 20px #c70039;
   transition: all 0.4s ease 0s;
 }
-.home-page .container .main-section .icons a i {
+.home-page .page .container .main-section .icons a i {
   margin: 25px 12px;
   background-color: transparent;
   color: #767676;
   font-size: 35px;
 }
-.home-page .container .main-section .background-container {
+.home-page .page .container .main-section .background-container {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
 }
-.home-page .container .main-section .background-container .stars {
+.home-page .page .container .main-section .background-container .stars {
   background: #000 url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png") repeat;
   position: absolute;
   top: 0;
@@ -1179,7 +1347,7 @@
   display: block;
   z-index: 0;
 }
-.home-page .container .main-section .background-container .twinkling {
+.home-page .page .container .main-section .background-container .twinkling {
   width: 10000px;
   height: 100%;
   background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
@@ -1191,7 +1359,7 @@
   z-index: 2;
   animation: move-background 70s linear infinite;
 }
-.home-page .container .main-section .background-container .clouds {
+.home-page .page .container .main-section .background-container .clouds {
   width: 10000px;
   height: 100%;
   background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
@@ -1235,63 +1403,73 @@
   max-width: 1200px;
 }
 
-.home-page .container {
+::-webkit-scrollbar {
+  background-color: #171717;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c70039;
+  border-radius: 25px;
+}
+
+.page .container {
   height: 100vh;
   position: relative;
   padding: 0;
 }
-.home-page .container .header-nav {
+.page .container .header-nav {
   position: absolute;
   top: 0;
   z-index: 12;
   background-color: transparent;
   width: 100%;
 }
-.home-page .container .header-nav ul {
+.page .container .header-nav ul {
   margin: 0;
   padding: 0;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
 }
-.home-page .container .header-nav ul li {
+.page .container .header-nav ul li {
   background-color: transparent;
 }
-.home-page .container .header-nav ul li .menu-button {
+.page .container .header-nav ul li .menu-button {
   background-color: transparent;
   width: 100%;
   margin: 20% 40% 10%;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slidefirst 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
   animation: slidesecond 1s forwards;
   width: 70px;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
   width: 100px;
 }
-.home-page .container .header-nav ul li .menu-button:hover {
+.page .container .header-nav ul li .menu-button:hover {
   cursor: pointer;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slide1 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
   width: 70px;
   animation: slide2 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line {
+.page .container .header-nav ul li .menu-button .menu-button-line {
   height: 2px;
   margin-bottom: 25px;
   background: #767676;
   transition: 0.3s;
   transition-timing-function: linear;
 }
-.home-page .container .header-nav ul li img {
+.page .container .header-nav ul li img {
   background-color: transparent;
   width: 120px;
 }
@@ -1328,10 +1506,10 @@
   }
 }
 
-.home-page {
+.page {
   position: relative;
 }
-.home-page .navbar {
+.page .navbar {
   margin: 0;
   padding: 0;
   z-index: 25;
@@ -1344,13 +1522,13 @@
   left: 0;
   animation: nav 1s forwards;
 }
-.home-page .navbar .items {
+.page .navbar .items {
   position: relative;
   left: 0;
   top: 0;
   width: 100%;
 }
-.home-page .navbar .items .close-menu-btn {
+.page .navbar .items .close-menu-btn {
   text-align: end;
   color: #c70039;
   font-size: 50px;
@@ -1358,15 +1536,15 @@
   border: none;
   transition: all 0.4s ease 0s;
 }
-.home-page .navbar .items .close-menu-btn:hover {
+.page .navbar .items .close-menu-btn:hover {
   text-shadow: 0px 0px 20px #f5f5f5;
   transition: all 0.4s ease 0s;
 }
-.home-page .navbar .items .close-menu-btn i {
+.page .navbar .items .close-menu-btn i {
   margin: 25px;
   background-color: transparent;
 }
-.home-page .navbar .items .link-text {
+.page .navbar .items .link-text {
   background-color: transparent;
   font-size: 130px;
   display: none;
@@ -1380,22 +1558,22 @@
   text-align: center;
   text-shadow: 0px 0px 20px #c70039;
 }
-.home-page .navbar .items nav {
+.page .navbar .items nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.home-page .navbar .items nav ul {
+.page .navbar .items nav ul {
   text-align: center;
   line-height: 65px;
   background-color: transparent;
   z-index: 20;
 }
-.home-page .navbar .items nav ul li {
+.page .navbar .items nav ul li {
   background-color: transparent;
 }
-.home-page .navbar .items nav ul li a {
+.page .navbar .items nav ul li a {
   background-color: transparent;
   color: #767676;
   font-size: 70px;
@@ -1423,63 +1601,63 @@
     font-size: 75px;
   }
 }
-.home-page .container {
+.page .container {
   height: 100vh;
   position: relative;
   padding: 0;
 }
-.home-page .container .header-nav {
+.page .container .header-nav {
   position: absolute;
   top: 0;
   z-index: 12;
   background-color: transparent;
   width: 100%;
 }
-.home-page .container .header-nav ul {
+.page .container .header-nav ul {
   margin: 0;
   padding: 0;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
 }
-.home-page .container .header-nav ul li {
+.page .container .header-nav ul li {
   background-color: transparent;
 }
-.home-page .container .header-nav ul li .menu-button {
+.page .container .header-nav ul li .menu-button {
   background-color: transparent;
   width: 100%;
   margin: 20% 40% 10%;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slidefirst 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(2) {
   animation: slidesecond 1s forwards;
   width: 70px;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
+.page .container .header-nav ul li .menu-button .menu-button-line:nth-child(3) {
   width: 100px;
 }
-.home-page .container .header-nav ul li .menu-button:hover {
+.page .container .header-nav ul li .menu-button:hover {
   cursor: pointer;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(1) {
   width: 40px;
   animation: slide1 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
+.page .container .header-nav ul li .menu-button:hover .menu-button-line:nth-child(2) {
   width: 70px;
   animation: slide2 1s forwards;
 }
-.home-page .container .header-nav ul li .menu-button .menu-button-line {
+.page .container .header-nav ul li .menu-button .menu-button-line {
   height: 2px;
   margin-bottom: 25px;
   background: #767676;
   transition: 0.3s;
   transition-timing-function: linear;
 }
-.home-page .container .header-nav ul li img {
+.page .container .header-nav ul li img {
   background-color: transparent;
   width: 120px;
 }

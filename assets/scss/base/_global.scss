@@ -6,3 +6,11 @@
   margin: 0 auto;
   max-width: 1200px;
 }
+::-webkit-scrollbar{
+  background-color: $base_color;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: $primary_color;
+  border-radius: 25px;
+}

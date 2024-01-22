@@ -31,53 +31,96 @@
     <title>About Page</title>
   </head>
   <body>
-    <div class="home-page">
-      <div class="navbar">
-        <div class="items">
-          <div class="close-menu-btn">
-            <i class="fa-regular fa-circle-xmark"></i>
+    <div class="about-page">
+      <div class="page">
+        <div class="navbar">
+          <div class="items">
+            <div class="close-menu-btn">
+              <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+            <div class="link-text link-text-home">HOME PAGE</div>
+            <div class="link-text link-text-about">ABOUT PAGE</div>
+            <div class="link-text link-text-blog">BLOG PAGE</div>
+            <div class="link-text link-text-portfolio">PORTFOLIO PAGE</div>
+            <div class="link-text link-text-contact">CONTACT PAGE</div>
+            <nav class="nav-list">
+              <ul>
+                <li>
+                  <a class="home" href="./index.html">HOME</a>
+                </li>
+                <li>
+                  <a class="about" href="./about.html">ABOUT</a>
+                </li>
+                <li>
+                  <a class="blog" href="./blog.html">BLOG</a>
+                </li>
+                <li>
+                  <a class="portfolio" href="./portfolio.html">PORTFOLIO</a>
+                </li>
+                <li>
+                  <a class="contact" href="./contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div class="link-text link-text-home">HOME PAGE</div>
-          <div class="link-text link-text-about">ABOUT PAGE</div>
-          <div class="link-text link-text-blog">BLOG PAGE</div>
-          <div class="link-text link-text-portfolio">PORTFOLIO PAGE</div>
-          <div class="link-text link-text-contact">CONTACT PAGE</div>
-          <nav class="nav-list">
+        </div>
+        <div class="container">
+          <header class="header-nav">
             <ul>
               <li>
-                <a class="home" href="./index.html">HOME</a>
+                <img src="./assets/image/moon.png" alt="" />
               </li>
               <li>
-                <a class="about" href="./about.html">ABOUT</a>
-              </li>
-              <li>
-                <a class="blog" href="./blog.html">BLOG</a>
-              </li>
-              <li>
-                <a class="portfolio" href="./portfolio.html">PORTFOLIO</a>
-              </li>
-              <li>
-                <a class="contact" href="./contact.html">CONTACT</a>
+                <div class="menu-button">
+                  <div class="menu-button-line"></div>
+                  <div class="menu-button-line"></div>
+                  <div class="menu-button-line"></div>
+                </div>
               </li>
             </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="container">
-        <header class="header-nav">
-          <ul>
-            <li>
-              <img src="./assets/image/moon.png" alt="" />
-            </li>
-            <li>
-              <div class="menu-button">
-                <div class="menu-button-line"></div>
-                <div class="menu-button-line"></div>
-                <div class="menu-button-line"></div>
+          </header>
+          <div class="about-me-section">
+            <div class="heading">
+              <h1>About <span>Me</span></h1>
+              <p>Get to Know <span>me.</span></p>
+            </div>
+            <div class="text-photo">
+              <div class="left">
+                <h2>
+                  I'm creative <span>web developer</span> based in Ganja,
+                  Azerbaijan
+                </h2>
+                <p>
+                  With 1 year of experience as a Web developer, I have acquired
+                  skills and knowledge necessary to make your project a success.
+                  I enjoy every step while working.
+                </p>
+                <div id="wrap">
+                  <a
+                    href="./assets/image/YaqutVerdiyeva.pdf"
+                    download="YaqutVerdi"
+                    href="#"
+                    class="btn-slide2"
+                  >
+                    <span class="circle2"
+                      ><i style="background-color: transparent;" class="fa-solid fa-download"></i
+                    ></span>
+                    <span class="title2">Download</span>
+                    <span class="title-hover2">Click here</span>
+                  </a>
+                </div>
               </div>
-            </li>
-          </ul>
-        </header>
+              <div class="right">
+                <img
+                  width="100%"
+                  height="350px"
+                  src="./assets/image/coding.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="./assets/js/about.js"></script>
