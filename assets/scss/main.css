@@ -23,7 +23,7 @@
 .home-page .container .header-nav {
   position: absolute;
   top: 0;
-  left: -100px;
+  left: -70px;
   z-index: 12;
   background-color: transparent;
   width: 200px;
@@ -119,7 +119,7 @@
 .home-page .container .header-nav {
   position: absolute;
   top: 0;
-  left: -100px;
+  left: -70px;
   z-index: 12;
   background-color: transparent;
   width: 200px;
@@ -215,7 +215,7 @@
 .home-page .container .header-nav {
   position: absolute;
   top: 0;
-  left: -100px;
+  left: -70px;
   z-index: 12;
   background-color: transparent;
   width: 200px;
@@ -344,7 +344,7 @@
 }
 .home-page .navbar .items .link-text {
   background-color: transparent;
-  font-size: 150px;
+  font-size: 130px;
   display: none;
   position: absolute;
   top: 40%;
@@ -354,7 +354,7 @@
   z-index: 15;
   font-weight: 900;
   text-align: center;
-  text-shadow: 0px 0px 10px #c70039;
+  text-shadow: 0px 0px 20px #c70039;
 }
 .home-page .navbar .items nav {
   display: flex;
@@ -394,6 +394,11 @@
     top: -100vh;
   }
 }
+@media only screen and (max-width: 767px) {
+  .home-page .navbar .items .link-text {
+    font-size: 75px;
+  }
+}
 .home-page .container {
   height: 100vh;
   position: relative;
@@ -401,7 +406,7 @@
 .home-page .container .header-nav {
   position: absolute;
   top: 0;
-  left: -100px;
+  left: -70px;
   z-index: 12;
   background-color: transparent;
   width: 200px;
@@ -484,6 +489,7 @@
   top: 35%;
 }
 .home-page .container .main-section .text {
+  text-align: center;
   z-index: 10;
   background-color: transparent;
   font-size: 70px;
@@ -612,7 +618,7 @@
 .home-page .container .header-nav {
   position: absolute;
   top: 0;
-  left: -100px;
+  left: -70px;
   z-index: 12;
   background-color: transparent;
   width: 200px;
