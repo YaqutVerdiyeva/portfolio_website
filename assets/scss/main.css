@@ -435,6 +435,205 @@
   border-radius: 15px;
 }
 
+.about-page .page .container .my-services h1 {
+  text-align: center;
+  padding: 100px 0;
+  color: #f5f5f5;
+  font-size: 55px;
+  font-weight: 400;
+}
+.about-page .page .container .my-services h1 span {
+  color: #c70039;
+}
+.about-page .page .container .my-services .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.about-page .page .container .my-services .services .service {
+  margin: 10px;
+  width: 420px;
+  height: 420px;
+  background: #252525;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+.about-page .page .container .my-services .services .service:hover .overlay {
+  transform: scale(8);
+}
+.about-page .page .container .my-services .services .service .text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
+  position: absolute;
+  top: 150px;
+  background-color: transparent;
+  font-size: 17px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+  text-align: center;
+}
+.about-page .page .container .my-services .services .service .text h2 {
+  background-color: transparent;
+}
+.about-page .page .container .my-services .services .service .text p {
+  background-color: transparent;
+  font-weight: 100;
+}
+.about-page .page .container .my-services .services .service .overlay {
+  width: 118px;
+  position: absolute;
+  height: 118px;
+  border-radius: 25%;
+  background: #c70039;
+  margin-left: auto;
+  margin-right: auto;
+  top: 20px;
+  z-index: 0;
+  transition: transform 0.5s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-page .page .container .my-services .services .service .icon {
+  position: absolute;
+  background-color: transparent;
+  top: 50px;
+}
+.about-page .page .container .my-services .services .service .icon .fa-laptop-code,
+.about-page .page .container .my-services .services .service .icon .fa-react {
+  background-color: transparent;
+  color: #f5f5f5;
+  font-size: 60px;
+}
+
+.about-page .page .container .my-skills h1 {
+  text-align: center;
+  padding: 100px 0;
+  color: #f5f5f5;
+  font-size: 55px;
+  font-weight: 400;
+}
+.about-page .page .container .my-skills h1 span {
+  color: #c70039;
+}
+.about-page .page .container .my-skills .skills {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.about-page .page .container .my-skills .skills .card {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 0 50px;
+  background-color: transparent;
+  border: none;
+}
+.about-page .page .container .my-skills .skills .card .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171717;
+  box-shadow: 0px 0px 20px #000;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s;
+  position: absolute;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  width: 100%;
+  z-index: -1;
+}
+.about-page .page .container .my-skills .skills .card .wrapper .text {
+  display: grid;
+  place-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c70039;
+  background-color: transparent;
+}
+.about-page .page .container .my-skills .skills .card .wrapper .text > div {
+  grid-area: 1/1/-1/-1;
+}
+.about-page .page .container .my-skills .skills .card .wrapper .text .top {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+.about-page .page .container .my-skills .skills .card .wrapper .text .bottom {
+  -webkit-clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+  color: transparent;
+  background: linear-gradient(177deg, #171717 53%, hsl(0, 0%, 100%) 65%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  transform: translateX(-0.02em);
+}
+.about-page .page .container .my-skills .skills .card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+.about-page .page .container .my-skills .skills .card:hover .wrapper::before {
+  opacity: 1;
+}
+.about-page .page .container .my-skills .skills .card:hover .wrapper::after {
+  opacity: 1;
+  height: 120px;
+}
+.about-page .page .container .my-skills .skills .card:hover .wrapper .text {
+  display: none;
+}
+.about-page .page .container .my-skills .skills .card:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
+.about-page .page .container .my-skills .skills .card .character {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+  font-size: 150px;
+  color: #c70039;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 100%;
+}
+
+.about-page .page .container footer {
+  border-top: 2px dotted #c70039;
+  padding: 20px 0 1px 0;
+  text-align: center;
+}
+.about-page .page .container footer p {
+  color: #f5f5f5;
+  font-size: 25px;
+  font-weight: 100;
+}
+.about-page .page .container footer p span {
+  font-weight: 900;
+  color: #c70039;
+}
+
 * {
   margin: 0;
   padding: 0;

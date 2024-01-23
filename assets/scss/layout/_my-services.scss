@@ -1,0 +1,91 @@
+.about-page {
+  .page {
+    .container {
+      .my-services {
+        h1 {
+          text-align: center;
+          padding: 100px 0;
+          color: $text_color;
+          font-size: 55px;
+          font-weight: 400;
+          span {
+            color: $primary_color;
+          }
+        }
+        .services {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          .service {
+            margin: 10px;
+            width: 420px;
+            height: 420px;
+            background: #252525;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transition: all 0.3s ease-out;
+            text-decoration: none;
+            &:hover {
+              .overlay {
+                transform: scale(8);
+              }
+            }
+            .text {
+              padding: 20px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              color: $text_color;
+              position: absolute;
+              top: 150px;
+              background-color: transparent;
+              font-size: 17px;
+              z-index: 1000;
+              transition: color 0.3s ease-out;
+              text-align: center;
+              h2 {
+                background-color: transparent;
+              }
+              p {
+                background-color: transparent;
+                font-weight: 100;
+              }
+            }
+            .overlay {
+              width: 118px;
+              position: absolute;
+              height: 118px;
+              border-radius: 25%;
+              background: $primary_color;
+              margin-left: auto;
+              margin-right: auto;
+              top: 20px;
+              z-index: 0;
+              transition: transform 0.5s ease-out;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .icon {
+              position: absolute;
+              background-color: transparent;
+              top: 50px;
+              .fa-laptop-code,
+              .fa-react {
+                background-color: transparent;
+                color: $text_color;
+                font-size: 60px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
