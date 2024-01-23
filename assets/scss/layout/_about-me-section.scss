@@ -133,3 +133,23 @@
     }
   }
 }
+@media only screen and (max-width: 767px) {
+  .about-page {
+    .page {
+      .container {
+        .about-me-section {
+          .text-photo {
+            display: inline;
+            .left {
+              text-align: center;
+              width: 100%;
+            }
+            .right {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

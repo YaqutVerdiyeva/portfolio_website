@@ -435,6 +435,18 @@
   border-radius: 15px;
 }
 
+@media only screen and (max-width: 767px) {
+  .about-page .page .container .about-me-section .text-photo {
+    display: inline;
+  }
+  .about-page .page .container .about-me-section .text-photo .left {
+    text-align: center;
+    width: 100%;
+  }
+  .about-page .page .container .about-me-section .text-photo .right {
+    width: 100%;
+  }
+}
 .about-page .page .container .my-services h1 {
   text-align: center;
   padding: 100px 0;
@@ -530,9 +542,11 @@
 .about-page .page .container .my-skills .skills {
   padding-bottom: 100px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .about-page .page .container .my-skills .skills .card {
+  margin-top: 50px;
   width: 250px;
   height: 250px;
   position: relative;
@@ -541,7 +555,6 @@
   align-items: flex-end;
   padding: 0 36px;
   perspective: 2500px;
-  margin: 0 50px;
   background-color: transparent;
   border: none;
 }
