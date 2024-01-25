@@ -2092,4 +2092,21 @@
   100% {
     width: 70px;
   }
+}
+
+.portfolio-page .page .container .projects-section .heading {
+  text-align: center;
+  padding-top: 100px;
+  color: #f5f5f5;
+}
+.portfolio-page .page .container .projects-section .heading h1 {
+  font-size: 55px;
+  font-weight: 400;
+}
+.portfolio-page .page .container .projects-section .heading p {
+  font-weight: 100;
+  font-size: 22px;
+}
+.portfolio-page .page .container .projects-section .heading span {
+  color: #e4809d;
 }/*# sourceMappingURL=main.css.map */

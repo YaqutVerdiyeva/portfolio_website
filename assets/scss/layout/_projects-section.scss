@@ -1,0 +1,25 @@
+.portfolio-page {
+    .page {
+      .container {
+        .projects-section {
+          .heading {
+            text-align: center;
+            padding-top: 100px;
+            color: $text_color;
+            h1 {
+              font-size: 55px;
+              font-weight: 400;
+            }
+            p {
+              font-weight: 100;
+              font-size: 22px;
+            }
+            span {
+              color: $primary_color;
+            }
+          }
+          
+        }
+      }
+    }
+  }
