@@ -2,6 +2,34 @@
   .page {
     .container {
       .contact-me-section {
+        .alert {
+          display: none;
+          background: rgb(228, 128, 157);
+          background: linear-gradient(
+            90deg,
+            rgba(228, 128, 157, 1) 0%,
+            rgba(198, 111, 137, 1) 40%,
+            rgba(99, 56, 69, 1) 78%,
+            rgba(0, 0, 0, 1) 100%
+          );
+          border: none;
+          position: fixed;
+          z-index: 15;
+          right: 0;
+          animation: alert 1s forwards;
+          color: $text_color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          font-size: 22px;
+          font-weight: 100;
+          padding: 15px 50px 15px 10px;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          letter-spacing: 2px;
+        }
+
         .heading {
           text-align: center;
           padding-top: 100px;
@@ -36,6 +64,7 @@
               justify-content: center;
               align-items: center;
               gap: 40px;
+
               .name-email {
                 width: 100%;
                 gap: 30px;
@@ -153,5 +182,13 @@
         }
       }
     }
+  }
+}
+@keyframes alert {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 20%;
   }
 }

@@ -1265,6 +1265,27 @@
   }
 }
 
+.contact-page .page .container .contact-me-section .alert {
+  display: none;
+  background: rgb(228, 128, 157);
+  background: linear-gradient(90deg, rgb(228, 128, 157) 0%, rgb(198, 111, 137) 40%, rgb(99, 56, 69) 78%, rgb(0, 0, 0) 100%);
+  border: none;
+  position: fixed;
+  z-index: 15;
+  right: 0;
+  animation: alert 1s forwards;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 100;
+  padding: 15px 50px 15px 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  letter-spacing: 2px;
+}
 .contact-page .page .container .contact-me-section .heading {
   text-align: center;
   padding-top: 100px;
@@ -1407,6 +1428,14 @@
   .contact-page .page .container .contact-me-section .form-photo .photo-side {
     margin: 0;
     width: 100%;
+  }
+}
+@keyframes alert {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 20%;
   }
 }
 .page .container footer {
