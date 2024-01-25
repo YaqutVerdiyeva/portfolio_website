@@ -156,8 +156,8 @@ submitBtn.addEventListener("click", async (e) => {
     alertSection.setAttribute("class", "alert");
     alertSection.style.display = "block";
     alertSection.innerHTML = "Please fill all input!";
+    setTimeout(() => {
+      alertSection.classList.remove("alert");
+    }, 3000);
   }
-  setTimeout(() => {
-    alertSection.classList.remove("alert");
-  }, 3000);
 });
