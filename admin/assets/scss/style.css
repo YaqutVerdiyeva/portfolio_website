@@ -14,7 +14,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e4809d;
+  background-color: #4999f5;
   border-radius: 25px;
 }
 
@@ -28,24 +28,24 @@
 
 .admin-projects .container p {
   font-size: 50px;
-  color: #e4809d;
+  color: #4999f5;
   text-align: center;
 }
 .admin-projects .container .form {
   padding-bottom: 50px;
 }
 .admin-projects .container .form input[type=file]::file-selector-button {
-  background-color: #e4809d;
+  background-color: #4999f5;
 }
 .admin-projects .container .form .form-label {
   font-size: 22px;
-  color: #e4809d;
+  color: #4999f5;
   text-align: center;
 }
 .admin-projects .container .form .form-control {
   background-color: #000;
   border: 3px solid #000;
-  color: #e4809d;
+  color: #4999f5;
 }
 .admin-projects .container .form .form-control:focus {
   -webkit-box-shadow: none;
@@ -54,9 +54,9 @@
   margin-top: 20px;
   padding: 15px 40px;
   background-color: #000;
-  color: #e4809d;
+  color: #4999f5;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 5px;
   letter-spacing: 4px;
   overflow: hidden;
@@ -64,21 +64,21 @@
   cursor: pointer;
 }
 .admin-projects .container .form .btn-submit:hover {
-  background: #e4809d;
+  background: #4999f5;
   color: #000;
-  box-shadow: 0 0 20px #e4809d;
+  box-shadow: 0 0 20px #4999f5;
 }
 .admin-projects .container .projects .table {
   border: none !important;
-  color: #e4809d;
+  color: #4999f5;
   background-color: #101010;
 }
 .admin-projects .container .projects .table .project .edit-btn {
   padding: 5px 10px;
   background-color: #000;
-  color: #e4809d;
+  color: #4999f5;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 5px;
   letter-spacing: 4px;
   overflow: hidden;
@@ -86,15 +86,15 @@
   cursor: pointer;
 }
 .admin-projects .container .projects .table .project .edit-btn:hover {
-  background: #e4809d;
+  background: #4999f5;
   color: #000;
 }
 .admin-projects .container .projects .table .project .delete-btn {
   padding: 5px 10px;
   background-color: #000;
-  color: #e4809d;
+  color: #4999f5;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 5px;
   letter-spacing: 4px;
   overflow: hidden;
@@ -102,6 +102,6 @@
   cursor: pointer;
 }
 .admin-projects .container .projects .table .project .delete-btn:hover {
-  background: #e4809d;
+  background: #4999f5;
   color: #000;
 }/*# sourceMappingURL=style.css.map */

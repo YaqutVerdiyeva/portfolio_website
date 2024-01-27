@@ -22,7 +22,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e4809d;
+  background-color: #4999f5;
   border-radius: 25px;
 }
 
@@ -40,21 +40,21 @@
   height: 50px;
   background-color: #101010;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 50%;
   transition: 0.5s;
   cursor: pointer;
 }
 .page .container .scrollup:hover {
-  background: #e4809d;
-  box-shadow: 0 0 20px #e4809d;
+  background: #4999f5;
+  box-shadow: 0 0 20px #4999f5;
 }
 .page .container .scrollup:hover .fa-arrow-up {
   color: #101010;
 }
 .page .container .scrollup .fa-arrow-up {
   font-size: 22px;
-  color: #e4809d;
+  color: #4999f5;
   background-color: transparent;
 }
 .page .container .header-nav {
@@ -169,7 +169,7 @@
 }
 .page .navbar .items .close-menu-btn {
   text-align: end;
-  color: #e4809d;
+  color: #4999f5;
   font-size: 50px;
   background-color: transparent;
   border: none;
@@ -195,7 +195,7 @@
   z-index: 15;
   font-weight: 900;
   text-align: center;
-  text-shadow: 0px 0px 20px #e4809d;
+  text-shadow: 0px 0px 20px #4999f5;
 }
 .page .navbar .items nav {
   display: flex;
@@ -254,21 +254,21 @@
   height: 50px;
   background-color: #101010;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 50%;
   transition: 0.5s;
   cursor: pointer;
 }
 .page .container .scrollup:hover {
-  background: #e4809d;
-  box-shadow: 0 0 20px #e4809d;
+  background: #4999f5;
+  box-shadow: 0 0 20px #4999f5;
 }
 .page .container .scrollup:hover .fa-arrow-up {
   color: #101010;
 }
 .page .container .scrollup .fa-arrow-up {
   font-size: 22px;
-  color: #e4809d;
+  color: #4999f5;
   background-color: transparent;
 }
 .page .container .header-nav {
@@ -373,7 +373,7 @@
   font-size: 22px;
 }
 .about-page .page .container .about-me-section .heading span {
-  color: #e4809d;
+  color: #4999f5;
 }
 .about-page .page .container .about-me-section .text-photo {
   padding-top: 20px;
@@ -392,7 +392,7 @@
   color: #f5f5f5;
 }
 .about-page .page .container .about-me-section .text-photo .left h2 span {
-  color: #e4809d;
+  color: #4999f5;
 }
 .about-page .page .container .about-me-section .text-photo .left p {
   margin: 35px 0;
@@ -414,21 +414,21 @@
   padding: 0;
   border-radius: 50px;
   background: #f5f5f5;
-  border: 2px solid #e4809d;
+  border: 2px solid #4999f5;
   margin: 10px;
   transition: 0.5s;
 }
 .about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2:hover {
-  background-color: #e4809d;
+  background-color: #4999f5;
 }
 .about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2:hover .circle2 {
   left: 100%;
   margin-left: -45px;
   background-color: #f5f5f5;
-  color: #e4809d;
+  color: #4999f5;
 }
 .about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2:hover .circle2 .fa-solid {
-  color: #e4809d;
+  color: #4999f5;
 }
 .about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2:hover .title2 {
   left: 40px;
@@ -440,7 +440,7 @@
 }
 .about-page .page .container .about-me-section .text-photo .left #wrap .btn-slide2 .circle2 {
   display: block;
-  background-color: #e4809d;
+  background-color: #4999f5;
   color: #f5f5f5;
   position: absolute;
   float: left;
@@ -463,7 +463,7 @@
   background-color: transparent;
   font-size: 16px;
   font-weight: bold;
-  color: #e4809d;
+  color: #4999f5;
   left: 80px;
   transition: 0.5s;
 }
@@ -473,7 +473,7 @@
   margin: 0 auto;
   font-size: 16px;
   font-weight: bold;
-  color: #e4809d;
+  color: #4999f5;
   left: 80px;
   opacity: 0;
   transition: 0.5s;
@@ -507,7 +507,7 @@
   font-weight: 400;
 }
 .about-page .page .container .my-services h1 span {
-  color: #e4809d;
+  color: #4999f5;
 }
 .about-page .page .container .my-services .services {
   display: flex;
@@ -559,7 +559,7 @@
   position: absolute;
   height: 118px;
   border-radius: 25%;
-  background: #e4809d;
+  background: #4999f5;
   margin-left: auto;
   margin-right: auto;
   top: 20px;
@@ -589,7 +589,7 @@
   font-weight: 400;
 }
 .about-page .page .container .my-skills h1 span {
-  color: #e4809d;
+  color: #4999f5;
 }
 .about-page .page .container .my-skills .skills {
   padding-bottom: 100px;
@@ -631,7 +631,7 @@
   font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #e4809d;
+  color: #4999f5;
   background-color: transparent;
 }
 .about-page .page .container .my-skills .skills .card .wrapper .text > div {
@@ -675,17 +675,17 @@
   position: absolute;
   z-index: -1;
   font-size: 150px;
-  color: #e4809d;
+  color: #4999f5;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   height: 100%;
-  fill: #e4809d;
+  fill: #4999f5;
 }
 
 .page .container footer {
-  border-top: 2px dotted #e4809d;
+  border-top: 2px dotted #4999f5;
   padding: 20px 0 1px 0;
   text-align: center;
 }
@@ -696,7 +696,7 @@
 }
 .page .container footer p span {
   font-weight: 900;
-  color: #e4809d;
+  color: #4999f5;
 }
 
 * {
@@ -723,7 +723,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e4809d;
+  background-color: #4999f5;
   border-radius: 25px;
 }
 
@@ -741,21 +741,21 @@
   height: 50px;
   background-color: #101010;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 50%;
   transition: 0.5s;
   cursor: pointer;
 }
 .page .container .scrollup:hover {
-  background: #e4809d;
-  box-shadow: 0 0 20px #e4809d;
+  background: #4999f5;
+  box-shadow: 0 0 20px #4999f5;
 }
 .page .container .scrollup:hover .fa-arrow-up {
   color: #101010;
 }
 .page .container .scrollup .fa-arrow-up {
   font-size: 22px;
-  color: #e4809d;
+  color: #4999f5;
   background-color: transparent;
 }
 .page .container .header-nav {
@@ -870,7 +870,7 @@
 }
 .page .navbar .items .close-menu-btn {
   text-align: end;
-  color: #e4809d;
+  color: #4999f5;
   font-size: 50px;
   background-color: transparent;
   border: none;
@@ -896,7 +896,7 @@
   z-index: 15;
   font-weight: 900;
   text-align: center;
-  text-shadow: 0px 0px 20px #e4809d;
+  text-shadow: 0px 0px 20px #4999f5;
 }
 .page .navbar .items nav {
   display: flex;
@@ -955,21 +955,21 @@
   height: 50px;
   background-color: #101010;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 50%;
   transition: 0.5s;
   cursor: pointer;
 }
 .page .container .scrollup:hover {
-  background: #e4809d;
-  box-shadow: 0 0 20px #e4809d;
+  background: #4999f5;
+  box-shadow: 0 0 20px #4999f5;
 }
 .page .container .scrollup:hover .fa-arrow-up {
   color: #101010;
 }
 .page .container .scrollup .fa-arrow-up {
   font-size: 22px;
-  color: #e4809d;
+  color: #4999f5;
   background-color: transparent;
 }
 .page .container .header-nav {
@@ -1155,7 +1155,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e4809d;
+  background-color: #4999f5;
   border-radius: 25px;
 }
 
@@ -1173,21 +1173,21 @@
   height: 50px;
   background-color: #101010;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 50%;
   transition: 0.5s;
   cursor: pointer;
 }
 .page .container .scrollup:hover {
-  background: #e4809d;
-  box-shadow: 0 0 20px #e4809d;
+  background: #4999f5;
+  box-shadow: 0 0 20px #4999f5;
 }
 .page .container .scrollup:hover .fa-arrow-up {
   color: #101010;
 }
 .page .container .scrollup .fa-arrow-up {
   font-size: 22px;
-  color: #e4809d;
+  color: #4999f5;
   background-color: transparent;
 }
 .page .container .header-nav {
@@ -1302,7 +1302,7 @@
 }
 .page .navbar .items .close-menu-btn {
   text-align: end;
-  color: #e4809d;
+  color: #4999f5;
   font-size: 50px;
   background-color: transparent;
   border: none;
@@ -1328,7 +1328,7 @@
   z-index: 15;
   font-weight: 900;
   text-align: center;
-  text-shadow: 0px 0px 20px #e4809d;
+  text-shadow: 0px 0px 20px #4999f5;
 }
 .page .navbar .items nav {
   display: flex;
@@ -1387,21 +1387,21 @@
   height: 50px;
   background-color: #101010;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 50%;
   transition: 0.5s;
   cursor: pointer;
 }
 .page .container .scrollup:hover {
-  background: #e4809d;
-  box-shadow: 0 0 20px #e4809d;
+  background: #4999f5;
+  box-shadow: 0 0 20px #4999f5;
 }
 .page .container .scrollup:hover .fa-arrow-up {
   color: #101010;
 }
 .page .container .scrollup .fa-arrow-up {
   font-size: 22px;
-  color: #e4809d;
+  color: #4999f5;
   background-color: transparent;
 }
 .page .container .header-nav {
@@ -1494,8 +1494,8 @@
 
 .contact-page .page .container .contact-me-section .alert {
   display: none;
-  background: rgb(228, 128, 157);
-  background: linear-gradient(90deg, rgb(228, 128, 157) 0%, rgb(198, 111, 137) 40%, rgb(99, 56, 69) 78%, rgb(0, 0, 0) 100%);
+  background: #4999f5;
+  background: linear-gradient(90deg, #4999f5 0%, rgb(0, 0, 0) 100%);
   border: none;
   position: fixed;
   z-index: 15;
@@ -1527,7 +1527,7 @@
   font-size: 22px;
 }
 .contact-page .page .container .contact-me-section .heading span {
-  color: #e4809d;
+  color: #4999f5;
 }
 .contact-page .page .container .contact-me-section .form-photo {
   padding: 50px 0;
@@ -1575,9 +1575,9 @@
 .contact-page .page .container .contact-me-section .form-photo .form-side .form button {
   padding: 15px 40px;
   background-color: #000;
-  color: #e4809d;
+  color: #4999f5;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 5px;
   letter-spacing: 4px;
   overflow: hidden;
@@ -1585,9 +1585,9 @@
   cursor: pointer;
 }
 .contact-page .page .container .contact-me-section .form-photo .form-side .form button:hover {
-  background: #e4809d;
+  background: #4999f5;
   color: #000;
-  box-shadow: 0 0 2px #e4809d, 0 0 10px #e4809d, 0 0 10px #e4809d, 0 0 30px #e4809d;
+  box-shadow: 0 0 2px #4999f5, 0 0 10px #4999f5, 0 0 10px #4999f5, 0 0 30px #4999f5;
 }
 .contact-page .page .container .contact-me-section .form-photo .photo-side {
   margin: 0 20px;
@@ -1666,7 +1666,7 @@
   }
 }
 .page .container footer {
-  border-top: 2px dotted #e4809d;
+  border-top: 2px dotted #4999f5;
   padding: 20px 0 1px 0;
   text-align: center;
 }
@@ -1677,7 +1677,7 @@
 }
 .page .container footer p span {
   font-weight: 900;
-  color: #e4809d;
+  color: #4999f5;
 }
 
 * {
@@ -1704,7 +1704,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e4809d;
+  background-color: #4999f5;
   border-radius: 25px;
 }
 
@@ -1732,7 +1732,7 @@
 }
 .page .navbar .items .close-menu-btn {
   text-align: end;
-  color: #e4809d;
+  color: #4999f5;
   font-size: 50px;
   background-color: transparent;
   border: none;
@@ -1758,7 +1758,7 @@
   z-index: 15;
   font-weight: 900;
   text-align: center;
-  text-shadow: 0px 0px 20px #e4809d;
+  text-shadow: 0px 0px 20px #4999f5;
 }
 .page .navbar .items nav {
   display: flex;
@@ -1817,21 +1817,21 @@
   height: 50px;
   background-color: #101010;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 50%;
   transition: 0.5s;
   cursor: pointer;
 }
 .page .container .scrollup:hover {
-  background: #e4809d;
-  box-shadow: 0 0 20px #e4809d;
+  background: #4999f5;
+  box-shadow: 0 0 20px #4999f5;
 }
 .page .container .scrollup:hover .fa-arrow-up {
   color: #101010;
 }
 .page .container .scrollup .fa-arrow-up {
   font-size: 22px;
-  color: #e4809d;
+  color: #4999f5;
   background-color: transparent;
 }
 .page .container .header-nav {
@@ -1942,7 +1942,7 @@
   color: #f5f5f5;
 }
 .home-page .page .container .main-section .text .text-name {
-  color: #e4809d;
+  color: #4999f5;
   z-index: 10;
   background-color: transparent;
 }
@@ -1959,7 +1959,7 @@
 .home-page .page .container .main-section #text #app {
   animation: textclip 2s linear infinite;
   background-color: transparent;
-  color: #e4809d;
+  color: #4999f5;
 }
 .home-page .page .container .main-section #text #app .Typewriter__wrapper {
   background-color: transparent;
@@ -1974,7 +1974,7 @@
   transition: all 0.4s ease 0s;
 }
 .home-page .page .container .main-section .icons a:hover {
-  text-shadow: 0px 0px 20px #e4809d;
+  text-shadow: 0px 0px 20px #4999f5;
   transition: all 0.4s ease 0s;
 }
 .home-page .page .container .main-section .icons a i {
@@ -2062,7 +2062,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e4809d;
+  background-color: #4999f5;
   border-radius: 25px;
 }
 
@@ -2080,21 +2080,21 @@
   height: 50px;
   background-color: #101010;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 50%;
   transition: 0.5s;
   cursor: pointer;
 }
 .page .container .scrollup:hover {
-  background: #e4809d;
-  box-shadow: 0 0 20px #e4809d;
+  background: #4999f5;
+  box-shadow: 0 0 20px #4999f5;
 }
 .page .container .scrollup:hover .fa-arrow-up {
   color: #101010;
 }
 .page .container .scrollup .fa-arrow-up {
   font-size: 22px;
-  color: #e4809d;
+  color: #4999f5;
   background-color: transparent;
 }
 .page .container .header-nav {
@@ -2209,7 +2209,7 @@
 }
 .page .navbar .items .close-menu-btn {
   text-align: end;
-  color: #e4809d;
+  color: #4999f5;
   font-size: 50px;
   background-color: transparent;
   border: none;
@@ -2235,7 +2235,7 @@
   z-index: 15;
   font-weight: 900;
   text-align: center;
-  text-shadow: 0px 0px 20px #e4809d;
+  text-shadow: 0px 0px 20px #4999f5;
 }
 .page .navbar .items nav {
   display: flex;
@@ -2294,21 +2294,21 @@
   height: 50px;
   background-color: #101010;
   font-weight: bold;
-  border: 1px solid #e4809d;
+  border: 1px solid #4999f5;
   border-radius: 50%;
   transition: 0.5s;
   cursor: pointer;
 }
 .page .container .scrollup:hover {
-  background: #e4809d;
-  box-shadow: 0 0 20px #e4809d;
+  background: #4999f5;
+  box-shadow: 0 0 20px #4999f5;
 }
 .page .container .scrollup:hover .fa-arrow-up {
   color: #101010;
 }
 .page .container .scrollup .fa-arrow-up {
   font-size: 22px;
-  color: #e4809d;
+  color: #4999f5;
   background-color: transparent;
 }
 .page .container .header-nav {
@@ -2413,7 +2413,7 @@
   font-size: 22px;
 }
 .portfolio-page .page .container .projects-section .heading span {
-  color: #e4809d;
+  color: #4999f5;
 }
 .portfolio-page .page .container .projects-section .projects .project {
   margin: 100px 0;
@@ -2485,7 +2485,7 @@
   left: 0;
   width: 200px;
   height: 200px;
-  background: #e4809d;
+  background: #4999f5;
   transition: 1s;
 }
 .portfolio-page .page .container .projects-section .projects .project .text .learn-more .liquid::after {
@@ -2542,7 +2542,7 @@
   }
 }
 .page .container footer {
-  border-top: 2px dotted #e4809d;
+  border-top: 2px dotted #4999f5;
   padding: 20px 0 1px 0;
   text-align: center;
 }
@@ -2553,5 +2553,5 @@
 }
 .page .container footer p span {
   font-weight: 900;
-  color: #e4809d;
+  color: #4999f5;
 }/*# sourceMappingURL=main.css.map */

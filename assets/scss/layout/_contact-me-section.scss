@@ -4,12 +4,10 @@
       .contact-me-section {
         .alert {
           display: none;
-          background: rgb(228, 128, 157);
+          background: $primary_color;
           background: linear-gradient(
             90deg,
-            rgba(228, 128, 157, 1) 0%,
-            rgba(198, 111, 137, 1) 40%,
-            rgba(99, 56, 69, 1) 78%,
+            $primary_color 0%,
             rgba(0, 0, 0, 1) 100%
           );
           border: none;
