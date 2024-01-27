@@ -11,7 +11,7 @@ async function getData() {
     </div>
     <div class="text">
       <p class="name">${el.text}</p>
-      <a href="#" class="learn-more">
+      <a href="${el.link}" target="_blank" class="learn-more">
         <span
           >Project <i class="fa-solid fa-arrow-right"></i
         ></span>
