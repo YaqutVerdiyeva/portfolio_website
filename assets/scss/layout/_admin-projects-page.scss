@@ -7,6 +7,10 @@
     }
     .form {
       padding-bottom: 50px;
+      input[type="file"]::file-selector-button {
+        background-color: $primary_color;
+      }
+
       .form-label {
         font-size: 22px;
         color: $primary_color;

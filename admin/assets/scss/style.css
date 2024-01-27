@@ -34,6 +34,9 @@
 .admin-projects .container .form {
   padding-bottom: 50px;
 }
+.admin-projects .container .form input[type=file]::file-selector-button {
+  background-color: #e4809d;
+}
 .admin-projects .container .form .form-label {
   font-size: 22px;
   color: #e4809d;
