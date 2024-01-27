@@ -9,7 +9,7 @@
           font-size: 55px;
           font-weight: 400;
           span {
-            color: $primary_color;
+            color: var(--main);
           }
         }
         .skills {
@@ -48,7 +48,7 @@
                 font-size: 50px;
                 font-weight: 700;
                 text-transform: uppercase;
-                color: $primary_color;
+                color: var(--main);
                 background-color: transparent;
                 & > div {
                   grid-area: 1/1/-1/-1;
@@ -97,13 +97,13 @@
               position: absolute;
               z-index: -1;
               font-size: 150px;
-              color: $primary_color;
+              color: var(--main);
               display: flex;
               justify-content: center;
               align-items: center;
               border-radius: 50%;
               height: 100%;
-              fill: $primary_color;
+              fill: var(--main);
             }
           }
         }

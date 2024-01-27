@@ -17,7 +17,7 @@
           font-weight: 900;
           color: $text_color;
           .text-name {
-            color: $primary_color;
+            color: var(--main);
             z-index: 10;
             background-color: transparent;
           }
@@ -34,7 +34,7 @@
           #app {
             animation: textclip 2s linear infinite;
             background-color: transparent;
-            color: $primary_color;
+            color: var(--main);
             .Typewriter__wrapper {
               background-color: transparent;
             }
@@ -48,7 +48,7 @@
             border: none;
             transition: all 0.4s ease 0s;
             &:hover {
-              text-shadow: 0px 0px 20px $primary_color;
+              text-shadow: 0px 0px 20px var(--main);
               transition: all 0.4s ease 0s;
             }
             i {

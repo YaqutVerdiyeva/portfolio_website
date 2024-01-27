@@ -1,3 +1,11 @@
+:root {
+  --main: var(--pink);
+  --pink: #e4809d;
+  --second: #719dce;
+  --third: #71e661;
+  --fourth: #a471ce;
+}
+
 * {
   background-color: #101010;
   font-family: "Roboto", sans-serif;
@@ -14,8 +22,45 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #4999f5;
+  background-color: var(--main);
   border-radius: 25px;
+}
+
+.colors {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+.colors .pink {
+  background-color: var(--pink);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+}
+.colors .blue {
+  background-color: var(--second);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+}
+.colors .green {
+  background-color: var(--third);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+}
+.colors .purple {
+  background-color: var(--fourth);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
 }
 
 * {
@@ -28,24 +73,24 @@
 
 .admin-projects .container p {
   font-size: 50px;
-  color: #4999f5;
+  color: var(--main);
   text-align: center;
 }
 .admin-projects .container .form {
   padding-bottom: 50px;
 }
 .admin-projects .container .form input[type=file]::file-selector-button {
-  background-color: #4999f5;
+  background-color: var(--main);
 }
 .admin-projects .container .form .form-label {
   font-size: 22px;
-  color: #4999f5;
+  color: var(--main);
   text-align: center;
 }
 .admin-projects .container .form .form-control {
   background-color: #000;
   border: 3px solid #000;
-  color: #4999f5;
+  color: var(--main);
 }
 .admin-projects .container .form .form-control:focus {
   -webkit-box-shadow: none;
@@ -54,9 +99,9 @@
   margin-top: 20px;
   padding: 15px 40px;
   background-color: #000;
-  color: #4999f5;
+  color: var(--main);
   font-weight: bold;
-  border: 1px solid #4999f5;
+  border: 1px solid var(--main);
   border-radius: 5px;
   letter-spacing: 4px;
   overflow: hidden;
@@ -64,21 +109,21 @@
   cursor: pointer;
 }
 .admin-projects .container .form .btn-submit:hover {
-  background: #4999f5;
+  background: var(--main);
   color: #000;
-  box-shadow: 0 0 20px #4999f5;
+  box-shadow: 0 0 20px var(--main);
 }
 .admin-projects .container .projects .table {
   border: none !important;
-  color: #4999f5;
+  color: var(--main);
   background-color: #101010;
 }
 .admin-projects .container .projects .table .project .edit-btn {
   padding: 5px 10px;
   background-color: #000;
-  color: #4999f5;
+  color: var(--main);
   font-weight: bold;
-  border: 1px solid #4999f5;
+  border: 1px solid var(--main);
   border-radius: 5px;
   letter-spacing: 4px;
   overflow: hidden;
@@ -86,15 +131,15 @@
   cursor: pointer;
 }
 .admin-projects .container .projects .table .project .edit-btn:hover {
-  background: #4999f5;
+  background: var(--main);
   color: #000;
 }
 .admin-projects .container .projects .table .project .delete-btn {
   padding: 5px 10px;
   background-color: #000;
-  color: #4999f5;
+  color: var(--main);
   font-weight: bold;
-  border: 1px solid #4999f5;
+  border: 1px solid var(--main);
   border-radius: 5px;
   letter-spacing: 4px;
   overflow: hidden;
@@ -102,6 +147,6 @@
   cursor: pointer;
 }
 .admin-projects .container .projects .table .project .delete-btn:hover {
-  background: #4999f5;
+  background: var(--main);
   color: #000;
 }/*# sourceMappingURL=style.css.map */

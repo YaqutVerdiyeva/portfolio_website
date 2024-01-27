@@ -1,4 +1,11 @@
 $base_color: #101010;
-$primary_color: #4999f5;
+// $primary_color: #e4809d;
 $secondary_color: #767676;
 $text_color: #f5f5f5;
+:root {
+  --main: var(--pink);
+  --pink: #e4809d;
+  --second: #719dce;
+  --third: #71e661;
+  --fourth: #a471ce;
+}

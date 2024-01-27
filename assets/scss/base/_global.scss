@@ -6,11 +6,47 @@
   margin: 0 auto;
   max-width: 1200px;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   background-color: $base_color;
   width: 8px;
 }
-::-webkit-scrollbar-thumb{
-  background-color: $primary_color;
+::-webkit-scrollbar-thumb {
+  background-color: var(--main);
   border-radius: 25px;
+}
+.colors {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  .pink {
+    background-color: var(--pink);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+  }
+  .blue {
+    background-color: var(--second);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+  }
+  .green {
+    background-color: var(--third);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+  }
+  .purple {
+    background-color: var(--fourth);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+  }
 }

@@ -73,3 +73,39 @@ function scrollFunction() {
 window.addEventListener("scroll", function () {
   scrollFunction();
 });
+
+const btnPink = document.querySelector(".pink");
+const btnBlue = document.querySelector(".blue");
+const btnGreen = document.querySelector(".green");
+const btnPurple = document.querySelector(".purple");
+const state = "--main";
+btnPink.addEventListener("click", (_) => {
+  document.documentElement.style.setProperty(
+    state,
+    getComputedStyle(document.documentElement).getPropertyValue("--pink")
+  );
+});
+btnBlue.addEventListener("click", (_) => {
+  document.documentElement.style.setProperty(
+    state,
+    getComputedStyle(document.documentElement).getPropertyValue("--second")
+  );
+});
+btnGreen.addEventListener("click", (_) => {
+  document.documentElement.style.setProperty(
+    state,
+    getComputedStyle(document.documentElement).getPropertyValue("--third")
+  );
+});
+btnPurple.addEventListener("click", (_) => {
+  document.documentElement.style.setProperty(
+    state,
+    getComputedStyle(document.documentElement).getPropertyValue("--fourth")
+  );
+});
+
+
+// var root = document.documentElement;
+
+// Set the value of the --color-font-general variable to #000000
+// root.style.setProperty('--fourth', '#a471ce');

@@ -12,20 +12,20 @@
       height: 50px;
       background-color: $base_color;
       font-weight: bold;
-      border: 1px solid $primary_color;
+      border: 1px solid var(--main);
       border-radius: 50%;
       transition: 0.5s;
       cursor: pointer;
       &:hover {
-        background: $primary_color;
-        box-shadow: 0 0 20px $primary_color;
+        background: var(--main);
+        box-shadow: 0 0 20px var(--main);
         .fa-arrow-up {
           color: $base_color;
         }
       }
       .fa-arrow-up {
         font-size: 22px;
-        color: $primary_color;
+        color: var(--main);
         background-color: transparent;
       }
     }

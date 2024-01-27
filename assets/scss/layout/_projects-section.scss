@@ -15,7 +15,7 @@
             font-size: 22px;
           }
           span {
-            color: $primary_color;
+            color: var(--main);
           }
         }
         .projects {
@@ -89,7 +89,7 @@
                   left: 0;
                   width: 200px;
                   height: 200px;
-                  background: $primary_color;
+                  background: var(--main);
                   transition: 1s;
                   &::after {
                     content: "";
