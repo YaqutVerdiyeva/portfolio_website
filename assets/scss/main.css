@@ -31,6 +31,32 @@
   position: relative;
   padding: 0;
 }
+.page .container .scrollup {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #101010;
+  font-weight: bold;
+  border: 1px solid #e4809d;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page .container .scrollup:hover {
+  background: #e4809d;
+  box-shadow: 0 0 20px #e4809d;
+}
+.page .container .scrollup:hover .fa-arrow-up {
+  color: #101010;
+}
+.page .container .scrollup .fa-arrow-up {
+  font-size: 22px;
+  color: #e4809d;
+  background-color: transparent;
+}
 .page .container .header-nav {
   position: absolute;
   top: 0;
@@ -218,6 +244,32 @@
   height: 100vh;
   position: relative;
   padding: 0;
+}
+.page .container .scrollup {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #101010;
+  font-weight: bold;
+  border: 1px solid #e4809d;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page .container .scrollup:hover {
+  background: #e4809d;
+  box-shadow: 0 0 20px #e4809d;
+}
+.page .container .scrollup:hover .fa-arrow-up {
+  color: #101010;
+}
+.page .container .scrollup .fa-arrow-up {
+  font-size: 22px;
+  color: #e4809d;
+  background-color: transparent;
 }
 .page .container .header-nav {
   position: absolute;
@@ -680,6 +732,32 @@
   position: relative;
   padding: 0;
 }
+.page .container .scrollup {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #101010;
+  font-weight: bold;
+  border: 1px solid #e4809d;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page .container .scrollup:hover {
+  background: #e4809d;
+  box-shadow: 0 0 20px #e4809d;
+}
+.page .container .scrollup:hover .fa-arrow-up {
+  color: #101010;
+}
+.page .container .scrollup .fa-arrow-up {
+  font-size: 22px;
+  color: #e4809d;
+  background-color: transparent;
+}
 .page .container .header-nav {
   position: absolute;
   top: 0;
@@ -867,6 +945,32 @@
   height: 100vh;
   position: relative;
   padding: 0;
+}
+.page .container .scrollup {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #101010;
+  font-weight: bold;
+  border: 1px solid #e4809d;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page .container .scrollup:hover {
+  background: #e4809d;
+  box-shadow: 0 0 20px #e4809d;
+}
+.page .container .scrollup:hover .fa-arrow-up {
+  color: #101010;
+}
+.page .container .scrollup .fa-arrow-up {
+  font-size: 22px;
+  color: #e4809d;
+  background-color: transparent;
 }
 .page .container .header-nav {
   position: absolute;
@@ -1060,6 +1164,32 @@
   position: relative;
   padding: 0;
 }
+.page .container .scrollup {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #101010;
+  font-weight: bold;
+  border: 1px solid #e4809d;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page .container .scrollup:hover {
+  background: #e4809d;
+  box-shadow: 0 0 20px #e4809d;
+}
+.page .container .scrollup:hover .fa-arrow-up {
+  color: #101010;
+}
+.page .container .scrollup .fa-arrow-up {
+  font-size: 22px;
+  color: #e4809d;
+  background-color: transparent;
+}
 .page .container .header-nav {
   position: absolute;
   top: 0;
@@ -1247,6 +1377,32 @@
   height: 100vh;
   position: relative;
   padding: 0;
+}
+.page .container .scrollup {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #101010;
+  font-weight: bold;
+  border: 1px solid #e4809d;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page .container .scrollup:hover {
+  background: #e4809d;
+  box-shadow: 0 0 20px #e4809d;
+}
+.page .container .scrollup:hover .fa-arrow-up {
+  color: #101010;
+}
+.page .container .scrollup .fa-arrow-up {
+  font-size: 22px;
+  color: #e4809d;
+  background-color: transparent;
 }
 .page .container .header-nav {
   position: absolute;
@@ -1652,6 +1808,32 @@
   position: relative;
   padding: 0;
 }
+.page .container .scrollup {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #101010;
+  font-weight: bold;
+  border: 1px solid #e4809d;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page .container .scrollup:hover {
+  background: #e4809d;
+  box-shadow: 0 0 20px #e4809d;
+}
+.page .container .scrollup:hover .fa-arrow-up {
+  color: #101010;
+}
+.page .container .scrollup .fa-arrow-up {
+  font-size: 22px;
+  color: #e4809d;
+  background-color: transparent;
+}
 .page .container .header-nav {
   position: absolute;
   top: 0;
@@ -1889,6 +2071,32 @@
   position: relative;
   padding: 0;
 }
+.page .container .scrollup {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #101010;
+  font-weight: bold;
+  border: 1px solid #e4809d;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page .container .scrollup:hover {
+  background: #e4809d;
+  box-shadow: 0 0 20px #e4809d;
+}
+.page .container .scrollup:hover .fa-arrow-up {
+  color: #101010;
+}
+.page .container .scrollup .fa-arrow-up {
+  font-size: 22px;
+  color: #e4809d;
+  background-color: transparent;
+}
 .page .container .header-nav {
   position: absolute;
   top: 0;
@@ -2076,6 +2284,32 @@
   height: 100vh;
   position: relative;
   padding: 0;
+}
+.page .container .scrollup {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #101010;
+  font-weight: bold;
+  border: 1px solid #e4809d;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page .container .scrollup:hover {
+  background: #e4809d;
+  box-shadow: 0 0 20px #e4809d;
+}
+.page .container .scrollup:hover .fa-arrow-up {
+  color: #101010;
+}
+.page .container .scrollup .fa-arrow-up {
+  font-size: 22px;
+  color: #e4809d;
+  background-color: transparent;
 }
 .page .container .header-nav {
   position: absolute;

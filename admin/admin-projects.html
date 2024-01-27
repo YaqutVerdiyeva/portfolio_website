@@ -32,8 +32,64 @@
   </head>
   <body>
     <div class="admin-projects">
-      <div class="container">
-       
+      <div class="container row">
+        <p class="heading">Add Project</p>
+        <div class="col col-2"></div>
+        <div class="col col-8">
+          <form class="form">
+            <div class="mb-3">
+              <label for="exampleInputText" class="form-label"
+                >Name Project</label
+              >
+              <input
+                type="text"
+                class="form-control text"
+                id="exampleInputText"
+                aria-describedby="textHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputLink" class="form-label"
+                >Project Link</label
+              >
+              <input
+                type="text"
+                class="form-control link"
+                id="exampleInputLink"
+                aria-describedby="linkHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPhoto" class="form-label">Photo</label>
+              <input
+                type="file"
+                class="form-control photo"
+                id="exampleInputPhoto"
+                aria-describedby="photoHelp"
+              />
+            </div>
+
+            <button type="submit" class="btn-submit">Submit</button>
+          </form>
+        </div>
+        <div class="col col-2"></div>
+        <p>Project</p>
+        <div class="projects">
+          <table class="table no-border">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Photo</th>
+                <th scope="col">Text</th>
+                <th scope="col">Link</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody class="project"></tbody>
+          </table>
+        </div>
+      </div>
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.6/axios.min.js"
@@ -41,6 +97,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
