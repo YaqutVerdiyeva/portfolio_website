@@ -21,5 +21,25 @@
       "message": "Good luck!",
       "id": "dmVpYbN"
     }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "photo": "./assets/image/project1.png",
+      "text": "Riorelax Luxury Hotel",
+      "link": "gikg"
+    },
+    {
+      "id": "2",
+      "photo": "./assets/image/project2.png",
+      "text": "Business theme creator",
+      "link": "gikg"
+    },
+    {
+      "id": "3",
+      "photo": "./assets/image/project3.png",
+      "text": "Where in the world",
+      "link": "gikg"
+    }
   ]
 }
