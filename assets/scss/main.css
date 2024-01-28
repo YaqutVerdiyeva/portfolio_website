@@ -1,6 +1,6 @@
 :root {
-  --main: var(--pink);
-  --pink: #e4809d;
+  --main: var(--first);
+  --first: #e4809d;
   --second: #719dce;
   --third: #71e661;
   --fourth: #a471ce;
@@ -34,41 +34,121 @@
   border-radius: 25px;
 }
 
-.colors {
+.radial {
   position: fixed;
-  top: 40%;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
+  z-index: 20;
+  bottom: 50px;
+  right: 50px;
 }
-.colors .pink {
-  background-color: var(--pink);
+.radial .triggerButton {
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+.radial .triggerButton i {
+  color: var(--main);
+}
+.radial .radialMenu {
+  background-color: transparent;
+  --width: 250px;
+  width: var(--width);
+  height: var(--width);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.radial .radialItem {
+  list-style: none;
+  position: absolute;
+  background-color: transparent;
+  width: 55px;
+  height: 55px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.radial .radialItem .pink {
+  background-color: var(--first);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .blue {
+.radial .radialItem a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #ff4081;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.radial .radialItem .blue {
   background-color: var(--second);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .green {
+.radial .radialItem .green {
   background-color: var(--third);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .purple {
+.radial .radialItem .purple {
   background-color: var(--fourth);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
+}
+.radial.active .radialItem {
+  --angle: 0deg;
+  --point-size: 60px;
+  --countItem: 8;
+  --radius: calc((var(--width) / 2) - (var(--point-size) / 2));
+  --x: calc(var(--radius) * cos(var(--angle)));
+  --y: calc(var(--radius) * sin(var(--angle)));
+  top: calc(var(--radius) + var(--y) + var(--point-size) / 2);
+  left: calc(var(--radius) + var(--x) + var(--point-size) / 2);
+  width: var(--point-size);
+  height: var(--point-size);
+}
+.radial.active .radialItem:nth-child(1) {
+  --angle: 275deg;
+}
+.radial.active .radialItem:nth-child(2) {
+  --angle: 240deg;
+}
+.radial.active .radialItem:nth-child(3) {
+  --angle: 205deg;
+}
+.radial.active .radialItem:nth-child(4) {
+  --angle: 170deg;
 }
 
 .page .container {
@@ -745,8 +825,8 @@
 }
 
 :root {
-  --main: var(--pink);
-  --pink: #e4809d;
+  --main: var(--first);
+  --first: #e4809d;
   --second: #719dce;
   --third: #71e661;
   --fourth: #a471ce;
@@ -780,41 +860,121 @@
   border-radius: 25px;
 }
 
-.colors {
+.radial {
   position: fixed;
-  top: 40%;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
+  z-index: 20;
+  bottom: 50px;
+  right: 50px;
 }
-.colors .pink {
-  background-color: var(--pink);
+.radial .triggerButton {
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+.radial .triggerButton i {
+  color: var(--main);
+}
+.radial .radialMenu {
+  background-color: transparent;
+  --width: 250px;
+  width: var(--width);
+  height: var(--width);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.radial .radialItem {
+  list-style: none;
+  position: absolute;
+  background-color: transparent;
+  width: 55px;
+  height: 55px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.radial .radialItem .pink {
+  background-color: var(--first);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .blue {
+.radial .radialItem a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #ff4081;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.radial .radialItem .blue {
   background-color: var(--second);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .green {
+.radial .radialItem .green {
   background-color: var(--third);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .purple {
+.radial .radialItem .purple {
   background-color: var(--fourth);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
+}
+.radial.active .radialItem {
+  --angle: 0deg;
+  --point-size: 60px;
+  --countItem: 8;
+  --radius: calc((var(--width) / 2) - (var(--point-size) / 2));
+  --x: calc(var(--radius) * cos(var(--angle)));
+  --y: calc(var(--radius) * sin(var(--angle)));
+  top: calc(var(--radius) + var(--y) + var(--point-size) / 2);
+  left: calc(var(--radius) + var(--x) + var(--point-size) / 2);
+  width: var(--point-size);
+  height: var(--point-size);
+}
+.radial.active .radialItem:nth-child(1) {
+  --angle: 275deg;
+}
+.radial.active .radialItem:nth-child(2) {
+  --angle: 240deg;
+}
+.radial.active .radialItem:nth-child(3) {
+  --angle: 205deg;
+}
+.radial.active .radialItem:nth-child(4) {
+  --angle: 170deg;
 }
 
 .page .container {
@@ -1222,8 +1382,8 @@
   }
 }
 :root {
-  --main: var(--pink);
-  --pink: #e4809d;
+  --main: var(--first);
+  --first: #e4809d;
   --second: #719dce;
   --third: #71e661;
   --fourth: #a471ce;
@@ -1257,41 +1417,121 @@
   border-radius: 25px;
 }
 
-.colors {
+.radial {
   position: fixed;
-  top: 40%;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
+  z-index: 20;
+  bottom: 50px;
+  right: 50px;
 }
-.colors .pink {
-  background-color: var(--pink);
+.radial .triggerButton {
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+.radial .triggerButton i {
+  color: var(--main);
+}
+.radial .radialMenu {
+  background-color: transparent;
+  --width: 250px;
+  width: var(--width);
+  height: var(--width);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.radial .radialItem {
+  list-style: none;
+  position: absolute;
+  background-color: transparent;
+  width: 55px;
+  height: 55px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.radial .radialItem .pink {
+  background-color: var(--first);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .blue {
+.radial .radialItem a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #ff4081;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.radial .radialItem .blue {
   background-color: var(--second);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .green {
+.radial .radialItem .green {
   background-color: var(--third);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .purple {
+.radial .radialItem .purple {
   background-color: var(--fourth);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
+}
+.radial.active .radialItem {
+  --angle: 0deg;
+  --point-size: 60px;
+  --countItem: 8;
+  --radius: calc((var(--width) / 2) - (var(--point-size) / 2));
+  --x: calc(var(--radius) * cos(var(--angle)));
+  --y: calc(var(--radius) * sin(var(--angle)));
+  top: calc(var(--radius) + var(--y) + var(--point-size) / 2);
+  left: calc(var(--radius) + var(--x) + var(--point-size) / 2);
+  width: var(--point-size);
+  height: var(--point-size);
+}
+.radial.active .radialItem:nth-child(1) {
+  --angle: 275deg;
+}
+.radial.active .radialItem:nth-child(2) {
+  --angle: 240deg;
+}
+.radial.active .radialItem:nth-child(3) {
+  --angle: 205deg;
+}
+.radial.active .radialItem:nth-child(4) {
+  --angle: 170deg;
 }
 
 .page .container {
@@ -1816,8 +2056,8 @@
 }
 
 :root {
-  --main: var(--pink);
-  --pink: #e4809d;
+  --main: var(--first);
+  --first: #e4809d;
   --second: #719dce;
   --third: #71e661;
   --fourth: #a471ce;
@@ -1851,41 +2091,121 @@
   border-radius: 25px;
 }
 
-.colors {
+.radial {
   position: fixed;
-  top: 40%;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
+  z-index: 20;
+  bottom: 50px;
+  right: 50px;
 }
-.colors .pink {
-  background-color: var(--pink);
+.radial .triggerButton {
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+.radial .triggerButton i {
+  color: var(--main);
+}
+.radial .radialMenu {
+  background-color: transparent;
+  --width: 250px;
+  width: var(--width);
+  height: var(--width);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.radial .radialItem {
+  list-style: none;
+  position: absolute;
+  background-color: transparent;
+  width: 55px;
+  height: 55px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.radial .radialItem .pink {
+  background-color: var(--first);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .blue {
+.radial .radialItem a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #ff4081;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.radial .radialItem .blue {
   background-color: var(--second);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .green {
+.radial .radialItem .green {
   background-color: var(--third);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .purple {
+.radial .radialItem .purple {
   background-color: var(--fourth);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
+}
+.radial.active .radialItem {
+  --angle: 0deg;
+  --point-size: 60px;
+  --countItem: 8;
+  --radius: calc((var(--width) / 2) - (var(--point-size) / 2));
+  --x: calc(var(--radius) * cos(var(--angle)));
+  --y: calc(var(--radius) * sin(var(--angle)));
+  top: calc(var(--radius) + var(--y) + var(--point-size) / 2);
+  left: calc(var(--radius) + var(--x) + var(--point-size) / 2);
+  width: var(--point-size);
+  height: var(--point-size);
+}
+.radial.active .radialItem:nth-child(1) {
+  --angle: 275deg;
+}
+.radial.active .radialItem:nth-child(2) {
+  --angle: 240deg;
+}
+.radial.active .radialItem:nth-child(3) {
+  --angle: 205deg;
+}
+.radial.active .radialItem:nth-child(4) {
+  --angle: 170deg;
 }
 
 .page {
@@ -2219,8 +2539,8 @@
   }
 }
 :root {
-  --main: var(--pink);
-  --pink: #e4809d;
+  --main: var(--first);
+  --first: #e4809d;
   --second: #719dce;
   --third: #71e661;
   --fourth: #a471ce;
@@ -2254,41 +2574,121 @@
   border-radius: 25px;
 }
 
-.colors {
+.radial {
   position: fixed;
-  top: 40%;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
+  z-index: 20;
+  bottom: 50px;
+  right: 50px;
 }
-.colors .pink {
-  background-color: var(--pink);
+.radial .triggerButton {
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+.radial .triggerButton i {
+  color: var(--main);
+}
+.radial .radialMenu {
+  background-color: transparent;
+  --width: 250px;
+  width: var(--width);
+  height: var(--width);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.radial .radialItem {
+  list-style: none;
+  position: absolute;
+  background-color: transparent;
+  width: 55px;
+  height: 55px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.radial .radialItem .pink {
+  background-color: var(--first);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .blue {
+.radial .radialItem a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #ff4081;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.radial .radialItem .blue {
   background-color: var(--second);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .green {
+.radial .radialItem .green {
   background-color: var(--third);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
 }
-.colors .purple {
+.radial .radialItem .purple {
   background-color: var(--fourth);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
+  position: relative;
+}
+.radial.active .radialItem {
+  --angle: 0deg;
+  --point-size: 60px;
+  --countItem: 8;
+  --radius: calc((var(--width) / 2) - (var(--point-size) / 2));
+  --x: calc(var(--radius) * cos(var(--angle)));
+  --y: calc(var(--radius) * sin(var(--angle)));
+  top: calc(var(--radius) + var(--y) + var(--point-size) / 2);
+  left: calc(var(--radius) + var(--x) + var(--point-size) / 2);
+  width: var(--point-size);
+  height: var(--point-size);
+}
+.radial.active .radialItem:nth-child(1) {
+  --angle: 275deg;
+}
+.radial.active .radialItem:nth-child(2) {
+  --angle: 240deg;
+}
+.radial.active .radialItem:nth-child(3) {
+  --angle: 205deg;
+}
+.radial.active .radialItem:nth-child(4) {
+  --angle: 170deg;
 }
 
 .page .container {

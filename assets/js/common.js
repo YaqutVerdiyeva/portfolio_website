@@ -52,60 +52,23 @@ contactLink.addEventListener("mouseleave", () => {
 portfolioLink.addEventListener("mouseleave", () => {
   linkTextPortfolio.style.display = "none";
 });
-/////////////////////////////////////////////////////scrollup
-let scrollUpBtn = document.querySelector(".scrollup");
-scrollUpBtn.addEventListener("click", function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-});
 
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
-  ) {
-    scrollUpBtn.style.display = "block";
-  } else {
-    scrollUpBtn.style.display = "none";
+window.onload = () => {
+  if (localStorage.getItem("second-color")) {
+    document
+      .querySelector(":root")
+      .style.setProperty("--main", localStorage.getItem("second-color"));
+  } else if (localStorage.getItem("green-color")) {
+    document
+      .querySelector(":root")
+      .style.setProperty("--main", localStorage.getItem("green-color"));
+  } else if (localStorage.getItem("first-color")) {
+    document
+      .querySelector(":root")
+      .style.setProperty("--main", localStorage.getItem("first-color"));
+  } else if (localStorage.getItem("purple-color")) {
+    document
+      .querySelector(":root")
+      .style.setProperty("--main", localStorage.getItem("purple-color"));
   }
-}
-
-window.addEventListener("scroll", function () {
-  scrollFunction();
-});
-
-const btnPink = document.querySelector(".pink");
-const btnBlue = document.querySelector(".blue");
-const btnGreen = document.querySelector(".green");
-const btnPurple = document.querySelector(".purple");
-const state = "--main";
-btnPink.addEventListener("click", (_) => {
-  document.documentElement.style.setProperty(
-    state,
-    getComputedStyle(document.documentElement).getPropertyValue("--pink")
-  );
-});
-btnBlue.addEventListener("click", (_) => {
-  document.documentElement.style.setProperty(
-    state,
-    getComputedStyle(document.documentElement).getPropertyValue("--second")
-  );
-});
-btnGreen.addEventListener("click", (_) => {
-  document.documentElement.style.setProperty(
-    state,
-    getComputedStyle(document.documentElement).getPropertyValue("--third")
-  );
-});
-btnPurple.addEventListener("click", (_) => {
-  document.documentElement.style.setProperty(
-    state,
-    getComputedStyle(document.documentElement).getPropertyValue("--fourth")
-  );
-});
-
-
-// var root = document.documentElement;
-
-// Set the value of the --color-font-general variable to #000000
-// root.style.setProperty('--fourth', '#a471ce');
+};
