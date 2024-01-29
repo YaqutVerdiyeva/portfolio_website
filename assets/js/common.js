@@ -72,3 +72,34 @@ window.onload = () => {
       .style.setProperty("--main", localStorage.getItem("purple-color"));
   }
 };
+
+homeLink.addEventListener("click", (e) => {
+  document.querySelector(".page-transition").style.display = "block";
+  setTimeout(() => {
+    window.location = "./index.html";
+  }, 1100);
+});
+aboutLink.addEventListener("click", (e) => {
+  document.querySelector(".page-transition").style.display = "block";
+  setTimeout(() => {
+    window.location = "./about.html";
+  }, 1100);
+});
+blogLink.addEventListener("click", (e) => {
+  document.querySelector(".page-transition").style.display = "block";
+  setTimeout(() => {
+    window.location = "./blog.html";
+  }, 1100);
+});
+portfolioLink.addEventListener("click", (e) => {
+  document.querySelector(".page-transition").style.display = "block";
+  setTimeout(() => {
+    window.location = "./portfolio.html";
+  }, 1100);
+});
+contactLink.addEventListener("click", (e) => {
+  document.querySelector(".page-transition").style.display = "block";
+  setTimeout(() => {
+    window.location = "./contact.html";
+  }, 1100);
+});

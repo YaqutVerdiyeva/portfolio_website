@@ -43,9 +43,9 @@
         width: 100%;
         color: $base_color;
         z-index: 15;
-        font-weight: 900;
+        font-weight: 100;
         text-align: center;
-        text-shadow: 0px 0px 20px var(--main);
+        text-shadow: 0px 0px 25px var(--main);
       }
       nav {
         display: flex;
@@ -65,6 +65,10 @@
               color: $secondary_color;
               font-size: 70px;
               font-weight: 100;
+              &:hover {
+                transition: 0.5s;
+                color: var(--main);
+              }
             }
           }
         }

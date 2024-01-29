@@ -151,6 +151,27 @@
   --angle: 170deg;
 }
 
+.page-transition {
+  position: fixed;
+  z-index: 50;
+  animation: page 1s linear;
+  top: 0;
+  left: 0;
+  display: none;
+  border-top: 100vh solid var(--main);
+  border-right: 200px solid transparent;
+  height: 100vh;
+  width: 150%;
+}
+
+@keyframes page {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 150%;
+  }
+}
 .page .container {
   height: 100vh;
   position: relative;
@@ -318,9 +339,9 @@
   width: 100%;
   color: #101010;
   z-index: 15;
-  font-weight: 900;
+  font-weight: 100;
   text-align: center;
-  text-shadow: 0px 0px 20px var(--main);
+  text-shadow: 0px 0px 25px var(--main);
 }
 .page .navbar .items nav {
   display: flex;
@@ -342,6 +363,10 @@
   color: #767676;
   font-size: 70px;
   font-weight: 100;
+}
+.page .navbar .items nav ul li a:hover {
+  transition: 0.5s;
+  color: var(--main);
 }
 
 @keyframes nav {
@@ -977,6 +1002,27 @@
   --angle: 170deg;
 }
 
+.page-transition {
+  position: fixed;
+  z-index: 50;
+  animation: page 1s linear;
+  top: 0;
+  left: 0;
+  display: none;
+  border-top: 100vh solid var(--main);
+  border-right: 200px solid transparent;
+  height: 100vh;
+  width: 150%;
+}
+
+@keyframes page {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 150%;
+  }
+}
 .page .container {
   height: 100vh;
   position: relative;
@@ -1144,9 +1190,9 @@
   width: 100%;
   color: #101010;
   z-index: 15;
-  font-weight: 900;
+  font-weight: 100;
   text-align: center;
-  text-shadow: 0px 0px 20px var(--main);
+  text-shadow: 0px 0px 25px var(--main);
 }
 .page .navbar .items nav {
   display: flex;
@@ -1168,6 +1214,10 @@
   color: #767676;
   font-size: 70px;
   font-weight: 100;
+}
+.page .navbar .items nav ul li a:hover {
+  transition: 0.5s;
+  color: var(--main);
 }
 
 @keyframes nav {
@@ -1534,6 +1584,27 @@
   --angle: 170deg;
 }
 
+.page-transition {
+  position: fixed;
+  z-index: 50;
+  animation: page 1s linear;
+  top: 0;
+  left: 0;
+  display: none;
+  border-top: 100vh solid var(--main);
+  border-right: 200px solid transparent;
+  height: 100vh;
+  width: 150%;
+}
+
+@keyframes page {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 150%;
+  }
+}
 .page .container {
   height: 100vh;
   position: relative;
@@ -1701,9 +1772,9 @@
   width: 100%;
   color: #101010;
   z-index: 15;
-  font-weight: 900;
+  font-weight: 100;
   text-align: center;
-  text-shadow: 0px 0px 20px var(--main);
+  text-shadow: 0px 0px 25px var(--main);
 }
 .page .navbar .items nav {
   display: flex;
@@ -1725,6 +1796,10 @@
   color: #767676;
   font-size: 70px;
   font-weight: 100;
+}
+.page .navbar .items nav ul li a:hover {
+  transition: 0.5s;
+  color: var(--main);
 }
 
 @keyframes nav {
@@ -2208,6 +2283,27 @@
   --angle: 170deg;
 }
 
+.page-transition {
+  position: fixed;
+  z-index: 50;
+  animation: page 1s linear;
+  top: 0;
+  left: 0;
+  display: none;
+  border-top: 100vh solid var(--main);
+  border-right: 200px solid transparent;
+  height: 100vh;
+  width: 150%;
+}
+
+@keyframes page {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 150%;
+  }
+}
 .page {
   position: relative;
 }
@@ -2256,9 +2352,9 @@
   width: 100%;
   color: #101010;
   z-index: 15;
-  font-weight: 900;
+  font-weight: 100;
   text-align: center;
-  text-shadow: 0px 0px 20px var(--main);
+  text-shadow: 0px 0px 25px var(--main);
 }
 .page .navbar .items nav {
   display: flex;
@@ -2280,6 +2376,10 @@
   color: #767676;
   font-size: 70px;
   font-weight: 100;
+}
+.page .navbar .items nav ul li a:hover {
+  transition: 0.5s;
+  color: var(--main);
 }
 
 @keyframes nav {
@@ -2691,6 +2791,27 @@
   --angle: 170deg;
 }
 
+.page-transition {
+  position: fixed;
+  z-index: 50;
+  animation: page 1s linear;
+  top: 0;
+  left: 0;
+  display: none;
+  border-top: 100vh solid var(--main);
+  border-right: 200px solid transparent;
+  height: 100vh;
+  width: 150%;
+}
+
+@keyframes page {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 150%;
+  }
+}
 .page .container {
   height: 100vh;
   position: relative;
@@ -2858,9 +2979,9 @@
   width: 100%;
   color: #101010;
   z-index: 15;
-  font-weight: 900;
+  font-weight: 100;
   text-align: center;
-  text-shadow: 0px 0px 20px var(--main);
+  text-shadow: 0px 0px 25px var(--main);
 }
 .page .navbar .items nav {
   display: flex;
@@ -2882,6 +3003,10 @@
   color: #767676;
   font-size: 70px;
   font-weight: 100;
+}
+.page .navbar .items nav ul li a:hover {
+  transition: 0.5s;
+  color: var(--main);
 }
 
 @keyframes nav {
