@@ -26,6 +26,7 @@ submitBtn.addEventListener("click", async (e) => {
       subject: subjectInput.value,
       message: messageInput.value,
     });
+    alertSection.innerHTML = "Submit!";
   } else if (
     nameInput.value &&
     emailInput.value &&
