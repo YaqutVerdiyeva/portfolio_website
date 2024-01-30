@@ -1,9 +1,9 @@
 :root {
   --main: var(--first);
-  --first: #e4809d;
-  --second: #719dce;
-  --third: #71e661;
-  --fourth: #a471ce;
+  --first: #f185bb;
+  --second: #6495ED;
+  --third: #5dec8d;
+  --fourth: #a568d6;
 }
 
 * {
