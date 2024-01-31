@@ -28,65 +28,25 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/scss/style.css" />
-    <title>Admin Projects Page</title>
+    <title>Admin Page</title>
   </head>
   <body>
-    <div class="admin-projects">
+    <div class="admin-page">
       <div class="container row">
-        <p class="heading">Add Project</p>
-        <div class="col col-2"></div>
-        <div class="col col-8">
-          <form class="form">
-            <div class="mb-3">
-              <label for="exampleInputText" class="form-label"
-                >Name Project</label
-              >
-              <input
-                type="text"
-                class="form-control text"
-                id="exampleInputText"
-                aria-describedby="textHelp"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputLink" class="form-label"
-                >Project Link</label
-              >
-              <input
-                type="text"
-                class="form-control link"
-                id="exampleInputLink"
-                aria-describedby="linkHelp"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPhoto" class="form-label">Photo</label>
-              <input
-                type="file"
-                class="form-control photo"
-                id="exampleInputPhoto"
-                aria-describedby="photoHelp"
-              />
-            </div>
-
-            <button type="submit" class="btn-submit">Submit</button>
-          </form>
-        </div>
-        <div class="col col-2"></div>
-        <p>Project</p>
-        <div class="projects">
+        <p>Messages</p>
+        <div class="messages">
           <table class="table no-border">
             <thead>
               <tr>
                 <th scope="col">Id</th>
-                <th scope="col">Photo</th>
-                <th scope="col">Text</th>
-                <th scope="col">Link</th>
-                <th scope="col">Edit</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Message</th>
                 <th scope="col">Delete</th>
               </tr>
             </thead>
-            <tbody class="project"></tbody>
+            <tbody class="message"></tbody>
           </table>
         </div>
       </div>

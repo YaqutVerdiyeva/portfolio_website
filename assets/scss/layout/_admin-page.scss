@@ -1,0 +1,36 @@
+.admin-page {
+  .container {
+    p {
+      font-size: 50px;
+      color: var(--main);
+      text-align: center;
+    }
+    
+    .messages {
+      .table {
+        border: none !important;
+        color: var(--main);
+        background-color: $base_color;
+        .message {
+         
+          .delete-btn {
+            padding: 5px 10px;
+            background-color: #000;
+            color: var(--main);
+            font-weight: bold;
+            border: 1px solid var(--main);
+            border-radius: 5px;
+            letter-spacing: 4px;
+            overflow: hidden;
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover {
+              background: var(--main);
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}

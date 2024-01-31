@@ -21,6 +21,7 @@ submitBtn.addEventListener("click", async (e) => {
     messageInput.value
   ) {
     axios.post(`${BASE_URL}`, {
+      id: Date.now(),
       name: nameInput.value,
       email: emailInput.value,
       subject: subjectInput.value,
